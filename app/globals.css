@@ -43,7 +43,23 @@ a {
 }
 
 nav a {
-  font-weight: 400;
+  font-weight: 300;
+}
+
+nav li {
+  display: inline;
+  margin-left: 3em;
+}
+
+nav > ul > li::before {
+  content: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
 }
 
 p,
