@@ -1,0 +1,11 @@
+nav#navbar > ul > li > a::before {
+  content: "●";
+  position: absolute;
+  margin-left: -1em;
+  display: none;
+}
+
+nav#navbar > ul > li > a:hover::before {
+  display: inline;
+  color: var(--color-primary);
+}

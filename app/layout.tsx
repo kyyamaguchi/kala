@@ -1,6 +1,9 @@
-import { Poppins, Roboto } from 'next/font/google'
-import './globals.css'
 import type { Metadata } from 'next'
+import { Poppins, Roboto } from 'next/font/google'
+
+import { Navbar } from '@/components/Navbar'
+
+import './globals.css'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -36,7 +39,13 @@ export default function RootLayout(
     lang="en"
     className={`${poppins.variable} ${roboto.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <header>
+          <h1>Kala Yamaguchi</h1>
+          <Navbar />
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
