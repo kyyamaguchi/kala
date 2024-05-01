@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './Home.module.css'
+import { Spacer } from '@/components/Spacer'
+import { GalleryCard } from '@/components/GalleryCard'
 
 export default function Home() {
   return (
@@ -17,6 +19,42 @@ export default function Home() {
           <p>Currently, he&apos;s based out of San Francisco, CA.</p>
         </div>
       </section>
+      <GalleryCard
+        src='/thumbnail-2.png'
+        alt='A thumbnail of a project'
+        title='Example Project'
+        description={<p>An optional tagline for the project</p>}
+        link="/"
+        cta="Optional CTA that can be a link elsewhere"
+      />
+      <Spacer size={32} />
+      <GalleryCard
+        src='/thumbnail-2.png'
+        alt='A thumbnail of a project'
+        title='Example Project'
+        description={<p>An optional tagline for the project</p>}
+        link="/"
+        cta="Optional CTA that can be a link elsewhere"
+      />
+      <Spacer size={32} />
+      <GalleryCard
+        src='/thumbnail-2.png'
+        alt='A thumbnail of a project'
+        title='Example Project'
+        description={<p>An optional tagline for the project</p>}
+        link="/"
+        cta="Optional CTA that can be a link elsewhere"
+      />
+      <Spacer size={32} />
+      <GalleryCard
+        src='/thumbnail-2.png'
+        alt='A thumbnail of a project'
+        title='Example Project'
+        description={<p>An optional tagline for the project</p>}
+        link="/"
+        cta="Optional CTA that can be a link elsewhere"
+      />
+      <Spacer size={32} />
     </>
   )
 }
