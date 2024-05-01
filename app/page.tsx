@@ -13,7 +13,7 @@ export default function Home() {
           height={949}
         />
         <div>
-          <p>Kala Yamaguchi is a native Hawaiian designer, illustrator, human being, and an avid practitioner of the K.I.S.S. philosophy.</p>
+          <p><strong>Kala Yamaguchi</strong> is a native Hawaiian designer, illustrator, human being, and an avid practitioner of the K.I.S.S. philosophy.</p>
           <p>Currently, he&apos;s based out of San Francisco, CA.</p>
         </div>
       </section>
