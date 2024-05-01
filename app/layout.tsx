@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Poppins, Roboto } from 'next/font/google'
 
@@ -41,7 +42,7 @@ export default function RootLayout(
     >
       <body>
         <header>
-          <h1>Kala Yamaguchi</h1>
+          <h1><Link style={{ fontWeight: '300' }} href="/">Kala Yamaguchi</Link></h1>
           <Navbar />
         </header>
         {children}

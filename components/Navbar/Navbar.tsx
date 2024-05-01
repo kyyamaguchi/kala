@@ -7,13 +7,13 @@ export function Navbar() {
       <nav id={styles.navbar}>
         <ul>
           <li>
-            <Link href="/">home</Link>
+            <Link href="/work">Work</Link>
           </li>
           <li>
-            <Link href="/about">about</Link>
+            <Link href="/endeavors">Endeavors</Link>
           </li>
           <li>
-            <Link href="/resume">resume</Link>
+            <Link href="/about">About</Link>
           </li>
         </ul>
       </nav>
