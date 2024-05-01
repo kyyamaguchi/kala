@@ -1,0 +1,18 @@
+div.image-card img {
+  position: relative !important; /* Override `next/image` */
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+div.image-card figcaption {
+  padding: 24px 0 18px 16px;
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+div.image-card p {
+  color: gray;
+  margin: 0;
+  padding-left: 16px;
+}
