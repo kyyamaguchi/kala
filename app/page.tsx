@@ -9,8 +9,8 @@ export default function Home() {
       <section id={styles.hero}>
         <Image
           unoptimized
-          src='/kala-illustration.png'
-          alt='An illustration of Kala Yamaguchi'
+          src="/kala-illustration.png"
+          alt="An illustration of Kala Yamaguchi"
           width={734}
           height={949}
         />
@@ -20,39 +20,16 @@ export default function Home() {
         </div>
       </section>
       <GalleryCard
-        src='/thumbnail-2.png'
-        alt='A thumbnail of a project'
-        title='Example Project'
-        description={<p>An optional tagline for the project</p>}
+        src="/thumbnail-2.png"
+        alt="A thumbnail of a project"
+        title="Dream Big — University of San Francisco"
         link="/"
-        cta="Optional CTA that can be a link elsewhere"
       />
       <Spacer size={32} />
       <GalleryCard
-        src='/thumbnail-2.png'
-        alt='A thumbnail of a project'
-        title='Example Project'
-        description={<p>An optional tagline for the project</p>}
-        link="/"
-        cta="Optional CTA that can be a link elsewhere"
-      />
-      <Spacer size={32} />
-      <GalleryCard
-        src='/thumbnail-2.png'
-        alt='A thumbnail of a project'
-        title='Example Project'
-        description={<p>An optional tagline for the project</p>}
-        link="/"
-        cta="Optional CTA that can be a link elsewhere"
-      />
-      <Spacer size={32} />
-      <GalleryCard
-        src='/thumbnail-2.png'
-        alt='A thumbnail of a project'
-        title='Example Project'
-        description={<p>An optional tagline for the project</p>}
-        link="/"
-        cta="Optional CTA that can be a link elsewhere"
+        src="/thumbnail-2.png"
+        alt="A thumbnail of a project"
+        title="The Nuyu Project"
       />
       <Spacer size={32} />
     </>
