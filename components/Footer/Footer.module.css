@@ -1,0 +1,10 @@
+footer.footer p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+footer.footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
