@@ -1,12 +1,8 @@
-nav#navbar > ul > li > a::before {
-  content: "●";
-  position: absolute;
-  margin-left: -1em;
-  opacity: 0;
+nav#navbar > ul > li > a:hover {
+  color: white;
+  background-color: black;
+  padding: 8px 16px;
+  margin: 0 -16px;
+  border-radius: 24px;
   transition: all 0.3s ease;
-}
-
-nav#navbar > ul > li > a:hover::before {
-  opacity: 1;
-  color: var(--color-primary);
 }
