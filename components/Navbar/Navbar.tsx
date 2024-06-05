@@ -7,7 +7,7 @@ export function Navbar() {
       <nav id={styles.navbar}>
         <ul>
           <li>
-            <Link href="/work">Work</Link>
+            <Link href="/">Work</Link>
           </li>
           <li>
             <Link href="/play">Play</Link>
