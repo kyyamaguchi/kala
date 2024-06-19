@@ -5,6 +5,7 @@ import { Poppins, Roboto } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { Spacer } from '@/components/Spacer'
 import { Footer } from '@/components/Footer'
+import { Cursor } from '@/components/Cursor'
 import { GoToTop } from '@/components/GoToTop'
 
 import './globals.css'
@@ -53,6 +54,7 @@ export default function RootLayout(
         <Footer />
         <Spacer size={`5vh`} />
         <GoToTop />
+        <Cursor />
       </body>
     </html>
   )
