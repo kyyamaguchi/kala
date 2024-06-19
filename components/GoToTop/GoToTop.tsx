@@ -11,7 +11,7 @@ export function GoToTop() {
   useEffect(() => {
     function handleScroll() {
       setScrollPosition(window.scrollY)
-      if (scrollPosition < 100)
+      if (scrollPosition < 1000)
         setShow(false)
       else
         setShow(true)
