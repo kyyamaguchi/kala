@@ -1,9 +1,8 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Poppins, Roboto } from 'next/font/google'
 
-import { Navbar } from '@/components/Navbar'
 import { Spacer } from '@/components/Spacer'
+import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Cursor } from '@/components/Cursor'
 import { GoToTop } from '@/components/GoToTop'
@@ -36,21 +35,17 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout(
-  { children}:
+  { children }:
   Readonly<{ children: React.ReactNode }>
 ) {
   return (
     <html
-    lang="en"
-    className={`${poppins.variable} ${roboto.variable}`}
+      lang="en"
+      className={`${poppins.variable} ${roboto.variable}`}
     >
       <body>
-        <header>
-          <h1><Link style={{ fontWeight: '300' }} href="/">Kala Yamaguchi</Link></h1>
-          <Navbar />
-        </header>
+        <Header />
         {children}
-        <Spacer size={`10vh`} />
         <Footer />
         <Spacer size={`5vh`} />
         <GoToTop />
