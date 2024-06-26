@@ -101,7 +101,7 @@ ul ul > li {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
