@@ -23,7 +23,6 @@ export function GoToTop() {
 
   return (
     <div
-      data-no-animation
       id={styles.wrapper}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       style={{

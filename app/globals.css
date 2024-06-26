@@ -109,6 +109,6 @@ ul ul > li {
   }
 }
 
-body *:not([data-no-animation]) {
-  animation: fadeIn 0.6s ease forwards;
+section p {
+  animation: fadeIn 1s ease forwards;
 }
