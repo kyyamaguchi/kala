@@ -5,6 +5,10 @@ import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
+import { Grid } from '@/components/Grid'
+import { Spacer } from '@/components/Spacer'
+import { GalleryCard } from '@/components/GalleryCard'
+
 import rehypeSlug from 'rehype-slug'
 
 const readPage = cache(async (slug: string[]) => {
@@ -20,6 +24,7 @@ const readPage = cache(async (slug: string[]) => {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
+      components: { GalleryCard, Grid, Spacer },
       options: {
         parseFrontmatter: true,
         mdxOptions: {
