@@ -1,8 +1,8 @@
 div#cursor {
   width: 14px;
   height: 14px;
-  background-color: black;
-  border: 2px solid white;
+  background-color: var(--color-black);
+  border: 2px solid var(--color-white);
   border-radius: 50%;
   position: absolute;
   pointer-events: none;

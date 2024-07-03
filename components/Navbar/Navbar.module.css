@@ -1,5 +1,5 @@
 nav#navbar > ul > li > a {
-  color: black;
+  color: var(--color-black);
   padding: 8px 16px;
   margin: 0 -16px;
   border-radius: 24px;
@@ -7,10 +7,10 @@ nav#navbar > ul > li > a {
 }
 
 nav#navbar > ul > li > a:hover {
-  background-color: #00000011;
+  background-color: var(--color-black-10);
 }
 
 nav#navbar > ul > li > a:active {
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
