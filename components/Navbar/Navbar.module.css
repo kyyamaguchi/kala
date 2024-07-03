@@ -1,4 +1,17 @@
+/* TODO: baseline alignment */
+
+nav#navbar li {
+  display: inline;
+  margin-left: 3em;
+}
+
+nav#navbar > ul > li::before {
+  content: none;
+}
+
 nav#navbar > ul > li > a {
+  font-size: 1.25em;
+  font-weight: 300;
   color: var(--color-black);
   padding: 8px 16px;
   margin: 0 -16px;

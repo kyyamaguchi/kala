@@ -47,20 +47,6 @@ a {
   cursor: none;
 }
 
-nav a {
-  font-size: 1.25em;
-  font-weight: 300;
-}
-
-nav li {
-  display: inline;
-  margin-left: 3em;
-}
-
-nav > ul > li::before {
-  content: none;
-}
-
 p,
 ul,
 ol {
