@@ -1,0 +1,10 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+header.header h1 a {
+  font-weight: 400;
+}

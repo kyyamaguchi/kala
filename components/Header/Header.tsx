@@ -5,13 +5,15 @@ import { usePathname } from 'next/navigation'
 
 import { Navbar } from '@/components/Navbar'
 
+import styles from './Header.module.css'
+
 export function Header() {
   const pathname = usePathname()
   if (pathname.includes('projects')) return <></>
   return (
     <>
-      <header>
-        <h1><Link style={{ fontWeight: '300' }} href="/">Kala Yamaguchi</Link></h1>
+      <header className={styles.header}>
+        <h1><Link href={`/`}> Kala Yamaguchi</Link></h1>
         <Navbar />
       </header>
     </>

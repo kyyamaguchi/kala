@@ -34,6 +34,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   margin: 1.5em 0 1em;
   line-height: 120%;
 }
@@ -57,13 +58,6 @@ nav li {
 
 nav > ul > li::before {
   content: none;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 0;
 }
 
 p,
