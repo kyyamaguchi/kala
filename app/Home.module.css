@@ -14,3 +14,18 @@ section#hero p strong {
   font-weight: 400;
   color: var(--color-black);
 }
+
+section#hero p {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
