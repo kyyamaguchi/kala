@@ -1,8 +1,12 @@
 :root {
   --font: var(--font-roboto), sans-serif;
 
-  color: black;
-  background-color: white;
+  --color-black:    hsla(0deg, 000%, 000%, 1.0);
+  --color-white:    hsla(0deg, 000%, 100%, 1.0);
+  --color-black-50: hsla(0deg, 000%, 000%, 0.5);
+
+  color: var(--color-black);
+  background-color: var(--color-white);
 
   margin-left: 160px;
   margin-right: 160px;
