@@ -1,0 +1,14 @@
+h1.title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+p.description {
+  margin-top: 0;
+}
+
+p.subtitle {
+  font-style: italic;
+  font-weight: 300;
+}

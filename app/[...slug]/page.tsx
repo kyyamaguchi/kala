@@ -1,15 +1,17 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
 import type { Metadata } from 'next'
+import rehypeSlug from 'rehype-slug'
 import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
 import { Grid } from '@/components/Grid'
 import { Spacer } from '@/components/Spacer'
+import { BackButton } from '@/components/BackButton'
 import { GalleryCard } from '@/components/GalleryCard'
 
-import rehypeSlug from 'rehype-slug'
+import styles from './Page.module.css'
 
 const readPage = cache(async (slug: string[]) => {
   try {
@@ -18,6 +20,8 @@ const readPage = cache(async (slug: string[]) => {
 
     type Frontmatter = {
       title: string
+      area: string
+      season: string
       description: string
       published: boolean
     }
@@ -93,6 +97,18 @@ export default async function Page(
   return (
     <>
       <Suspense fallback={<h1>{frontmatter.title}</h1>}>
+        <Spacer size={32 * 3} />
+        <BackButton />
+        <header>
+          <Grid columns={2}>
+            <div>
+              <h1 className={styles.title}>{frontmatter.title}</h1>
+              <p className={styles.subtitle}>{frontmatter.area}, {frontmatter.season}</p>
+            </div>
+            <p className={styles.description}>{frontmatter.description}</p>
+          </Grid>
+        </header>
+        <Spacer size={32} />
         {content}
       </Suspense>
     </>

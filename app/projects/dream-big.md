@@ -1,18 +1,10 @@
 ---
 title: "Dream Big"
+area: "Brand Identity"
+season: "Spring 2023"
 description: "A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
 published: true
 ---
-
-# Dream Big
-
-Brand Identity, Spring 2023
-
-A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-
-- list 1
-- list 2
-- list 3
 
 <GalleryCard
   src="/thumbnail-2.png"
