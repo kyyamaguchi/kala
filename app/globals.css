@@ -1,6 +1,5 @@
 :root {
-  --font-primary: var(--font-poppins), sans-serif;
-  --font-secondary: var(--font-roboto), sans-serif;
+  --font: var(--font-roboto), sans-serif;
 
   color: black;
   background-color: white;
@@ -22,7 +21,7 @@ body {
   margin: 0 auto;
   line-height: 180%;
   font-size: 1rem;
-  font-family: var(--font-secondary);
+  font-family: var(--font);
 }
 
 h1,
@@ -31,13 +30,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
   margin: 1.5em 0 1em;
   line-height: 120%;
-}
-
-h1 {
-  font-weight: 300;
 }
 
 a {
