@@ -10,7 +10,7 @@ export function Navbar() {
             <Link href="/">Work</Link>
           </li>
           <li>
-            <Link href="/play">Play</Link>
+            <Link href="/lab">Lab</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
