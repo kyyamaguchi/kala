@@ -23,7 +23,6 @@ export function GoToTop() {
 
   return (
     <div
-      id={styles.wrapper}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       style={{
         opacity: show ? 1 : 0,
