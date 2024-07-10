@@ -14,7 +14,7 @@ export default function Home() {
           width={734}
           height={949}
         />
-        <p><strong>Kala Yamaguchi</strong> is a Native Hawaiian designer & illustrator. Based out of San Francisco, CA.</p>
+        <p><strong>Kala Yamaguchi</strong> is a Native Hawaiian designer & illustrator based in San Francisco</p>
       </section>
       <GalleryCard
         src="/thumbnail-2.png"
