@@ -96,20 +96,22 @@ export default async function Page(
 
   return (
     <>
-      <Suspense fallback={<h1>{frontmatter.title}</h1>}>
-        <Spacer size={32 * 3} />
-        <BackButton />
-        <header>
-          <Grid columns={2}>
-            <div>
-              <h1 className={styles.title}>{frontmatter.title}</h1>
-              <p className={styles.subtitle}>{frontmatter.area}, {frontmatter.season}</p>
-            </div>
-            <p className={styles.description}>{frontmatter.description}</p>
-          </Grid>
-        </header>
-        <Spacer size={32} />
-        {content}
+      <Suspense>
+        <div className={styles.content}>
+          <Spacer size={32 * 3} />
+          <BackButton />
+          <header>
+            <Grid columns={2}>
+              <div>
+                <h1 className={styles.title}>{frontmatter.title}</h1>
+                <p className={styles.subtitle}>{frontmatter.area}, {frontmatter.season}</p>
+              </div>
+              <p className={styles.description}>{frontmatter.description}</p>
+            </Grid>
+          </header>
+          <Spacer size={32} />
+          {content}
+        </div>
       </Suspense>
     </>
   )

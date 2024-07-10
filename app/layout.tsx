@@ -38,12 +38,14 @@ export default function RootLayout(
       className={`${roboto.variable}`}
     >
       <body>
-        <Header />
-        {children}
-        <Footer />
-        <Spacer size={`5vh`} />
-        <GoToTop />
-        <Cursor />
+        <main>
+          <Header />
+          {children}
+          <Footer />
+          <Spacer size={`5vh`} />
+          <GoToTop />
+          <Cursor />
+        </main>
       </body>
     </html>
   )

@@ -9,9 +9,6 @@
   color: var(--color-black);
   background-color: var(--color-white);
 
-  margin-left: 160px;
-  margin-right: 160px;
-
   cursor: url('/cursor.png'), auto;
 }
 
@@ -22,11 +19,16 @@
 }
 
 body {
-  max-width: 1400px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   line-height: 180%;
   font-size: 1rem;
   font-family: var(--font);
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 160px;
 }
 
 h1,

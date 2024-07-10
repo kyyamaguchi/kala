@@ -20,7 +20,7 @@ export default function Home() {
         src="/thumbnail-2.png"
         alt="A thumbnail of a project"
         title="Dream Big — University of San Francisco"
-        link="/"
+        link="/projects/dream-big"
       />
       <Spacer size={32} />
       <GalleryCard
