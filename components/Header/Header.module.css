@@ -1,8 +1,8 @@
 header.header {
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0;
 }
 
 header.header h1 a {

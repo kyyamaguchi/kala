@@ -98,9 +98,8 @@ export default async function Page(
     <>
       <Suspense>
         <div className={styles.content}>
-          <Spacer size={32 * 3} />
           <BackButton />
-          <header>
+          <header className={styles.header}>
             <Grid columns={2}>
               <div>
                 <h1 className={styles.title}>{frontmatter.title}</h1>
@@ -109,7 +108,6 @@ export default async function Page(
               <p className={styles.description}>{frontmatter.description}</p>
             </Grid>
           </header>
-          <Spacer size={32} />
           {content}
         </div>
       </Suspense>

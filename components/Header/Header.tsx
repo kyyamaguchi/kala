@@ -13,7 +13,7 @@ export function Header() {
   return (
     <>
       <header className={styles.header}>
-        <h1><Link href={`/`}> Kala Yamaguchi</Link></h1>
+        <h1><Link href={`/`}>Kala Yamaguchi</Link></h1>
         <Navbar />
       </header>
     </>
