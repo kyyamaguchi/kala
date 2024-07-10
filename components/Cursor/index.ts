@@ -1,1 +1,1 @@
-export { Cursor } from './Cursor'
+export { PulsatingCursor, DifferenceCursor } from './Cursor'

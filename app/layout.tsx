@@ -4,8 +4,8 @@ import { Roboto } from 'next/font/google'
 import { Spacer } from '@/components/Spacer'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { Cursor } from '@/components/Cursor'
 import { GoToTop } from '@/components/GoToTop'
+import { DifferenceCursor } from '@/components/Cursor'
 
 import './globals.css'
 
@@ -44,7 +44,7 @@ export default function RootLayout(
           <Footer />
           <Spacer size={`5vh`} />
           <GoToTop />
-          <Cursor />
+          <DifferenceCursor />
         </main>
       </body>
     </html>

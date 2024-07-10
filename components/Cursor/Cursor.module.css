@@ -1,3 +1,14 @@
+div#difference-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 2;
+  pointer-events: none;
+}
+
 div#cursor {
   width: 14px;
   height: 14px;
