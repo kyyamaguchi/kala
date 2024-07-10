@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import { ViewTransitions } from 'next-view-transitions'
 
 import { Spacer } from '@/components/Spacer'
 import { Header } from '@/components/Header'
@@ -33,20 +34,22 @@ export default function RootLayout(
   Readonly<{ children: React.ReactNode }>
 ) {
   return (
-    <html
-      lang="en"
-      className={`${roboto.variable}`}
-    >
-      <body>
-        <main>
-          <Header />
-          {children}
-          <Footer />
-          <Spacer size={`5vh`} />
-          <GoToTop />
-          <DifferenceCursor />
-        </main>
-      </body>
-    </html>
+    <ViewTransitions>
+      <html
+        lang="en"
+        className={`${roboto.variable}`}
+      >
+        <body>
+          <main>
+            <Header />
+            {children}
+            <Footer />
+            <Spacer size={`10vh`} />
+            <GoToTop />
+            <DifferenceCursor />
+          </main>
+        </body>
+      </html>
+    </ViewTransitions>
   )
 }
