@@ -3,8 +3,36 @@ footer.footer p {
   font-weight: 300;
 }
 
-footer.footer nav ul {
+footer.footer nav#site-links ul,
+footer.footer nav#external-links ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+footer.footer nav#site-links > ul > li::before,
+footer.footer nav#external-links > ul > li::before {
+  content: none;
+}
+
+footer.footer nav#site-links > ul > li > a,
+footer.footer nav#external-links > ul > li > a {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: var(--color-black);
+  padding: 8px 16px;
+  margin: 0 -16px;
+  border-radius: 24px;
+  transition: all 0.2s ease;
+}
+
+footer.footer nav#site-links > ul > li > a:hover,
+footer.footer nav#external-links > ul > li > a:hover {
+  background-color: var(--color-black-10);
+}
+
+footer.footer nav#site-links > ul > li > a:active,
+footer.footer nav#external-links > ul > li > a:active {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
