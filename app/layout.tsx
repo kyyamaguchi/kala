@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { ViewTransitions } from 'next-view-transitions'
 
 import { Spacer } from '@/components/Spacer'
@@ -10,10 +10,10 @@ import { DifferenceCursor } from '@/components/Cursor'
 
 import './globals.css'
 
-const roboto = Roboto({
+const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '700'],
-  variable: '--font-roboto'
+  variable: '--font-inter'
 })
 
 let metadataBase: URL
@@ -37,7 +37,7 @@ export default function RootLayout(
     <ViewTransitions>
       <html
         lang="en"
-        className={`${roboto.variable}`}
+        className={`${inter.variable}`}
       >
         <body>
           <main>

@@ -1,5 +1,5 @@
 :root {
-  --font: var(--font-roboto), sans-serif;
+  --font: var(--font-inter), sans-serif;
 
   --color-black:    hsla(0deg, 000%, 000%, 1.000);
   --color-white:    hsla(0deg, 000%, 100%, 1.000);
