@@ -8,7 +8,7 @@ export function NavItems() {
           <Link href="/">Work</Link>
         </li>
         <li>
-          <Link href="/lab">Lab</Link>
+          <Link href="/studio">Studio</Link>
         </li>
         <li>
           <Link href="/about">About</Link>
