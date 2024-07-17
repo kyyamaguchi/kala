@@ -17,8 +17,8 @@ export function Cursor() {
     mouse.current.x = clientX
     mouse.current.y = clientY
 
-    const hovered = document.querySelector('a:hover')
-    setHovered(!!hovered)
+    const hovered = document.querySelectorAll('a:hover, button:hover')
+    setHovered(hovered.length > 0)
   }
 
   function lerp(start: number, end: number, amount: number) {

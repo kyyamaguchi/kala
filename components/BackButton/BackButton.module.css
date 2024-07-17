@@ -1,4 +1,4 @@
-a.button {
+a#button {
   position: absolute;
   margin-left: -80px;
   margin-top: 4px;
@@ -14,7 +14,7 @@ a.button {
   align-items: center;
 }
 
-a.button:hover {
+a#button:hover {
   background-color: var(--color-black);
   color: var(--color-white);
 }

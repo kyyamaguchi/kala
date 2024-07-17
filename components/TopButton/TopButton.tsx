@@ -32,7 +32,7 @@ export function TopButton() {
       aria-hidden={!show}
       aria-label="Go to top"
     >
-      <button className={styles.button}>
+      <button id={styles.button}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M5.75 10L12 3.75L18.25 10M12 20.25V4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>

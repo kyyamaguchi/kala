@@ -1,9 +1,9 @@
-.button {
+button#button {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  color: var(--color-black);
+  background-color: transparent;
   border: 2px solid transparent;
   border-radius: 50%;
   width: 50px;
@@ -12,8 +12,8 @@
   transition: all 0.3s ease;
 }
 
-.button:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
+button#button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
   border-color: var(--color-black);
 }
