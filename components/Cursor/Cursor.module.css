@@ -1,35 +1,18 @@
-div#difference-cursor {
+div#cursor {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+div#cursor.difference {
   background-color: white;
-  border-radius: 50%;
   mix-blend-mode: difference;
-  z-index: 2;
-  pointer-events: none;
 }
 
-div#cursor {
-  width: 14px;
-  height: 14px;
-  background-color: var(--color-black);
-  border: 2px solid var(--color-white);
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  animation: pulse 1s infinite;
-  z-index: 2;
-  display: none;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+div#cursor.blur {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(164, 164, 164, 0.5) 0%, rgba(164, 164, 164, 0.5) 100%);
+  backdrop-filter: blur(2px);
 }

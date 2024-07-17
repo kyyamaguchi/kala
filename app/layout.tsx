@@ -5,8 +5,8 @@ import { ViewTransitions } from 'next-view-transitions'
 import { Spacer } from '@/components/Spacer'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { Cursor } from '@/components/Cursor'
 import { GoToTop } from '@/components/GoToTop'
-import { DifferenceCursor } from '@/components/Cursor'
 
 import './globals.css'
 
@@ -46,7 +46,7 @@ export default function RootLayout(
             <Footer />
             <Spacer size={`10vh`} />
             <GoToTop />
-            <DifferenceCursor />
+            <Cursor />
           </main>
         </body>
       </html>

@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import styles from './Cursor.module.css'
 
-export function DifferenceCursor() {
+export function Cursor() {
   const mouse = useRef({ x: 0, y: 0 })
   const cursorRef = useRef<HTMLDivElement>(null)
   const delayedCursorRef = useRef({ x: 0, y: 0 })
@@ -47,61 +47,14 @@ export function DifferenceCursor() {
     <>
       <div
         ref={cursorRef}
-        id={styles["difference-cursor"]}
+        id={styles.cursor}
+        className={styles.blur}
         style={{
           width: size + 'px',
           height: size + 'px',
           transition: 'width 0.2s ease, height 0.2s ease, filter 0.2s ease'
         }}
       />
-    </>
-  )
-}
-
-export function PulsatingCursor() {
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const cursor = document.getElementById(styles.cursor)
-      if (cursor) {
-        cursor.style.left = e.pageX + 'px'
-        cursor.style.top = e.pageY + 'px'
-      }
-    }
-
-    const handleMouseEnter = () => {
-      const cursor = document.getElementById(styles.cursor)
-      if (cursor) {
-        cursor.style.display = 'block'
-      }
-    }
-
-    const handleMouseLeave = () => {
-      const cursor = document.getElementById(styles.cursor)
-      if (cursor) {
-        cursor.style.display = 'none'
-      }
-    }
-
-    document.addEventListener('mousemove', handleMouseMove)
-
-    const links = document.querySelectorAll(`a`)
-    links.forEach(link => {
-      link.addEventListener('mouseenter', handleMouseEnter)
-      link.addEventListener('mouseleave', handleMouseLeave)
-    })
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', handleMouseEnter)
-        link.removeEventListener('mouseleave', handleMouseLeave)
-      })
-    }
-  }, [])
-
-  return (
-    <>
-      <div id={styles.cursor}></div>
     </>
   )
 }
