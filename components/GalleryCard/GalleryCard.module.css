@@ -20,11 +20,3 @@ div.image-card p {
   margin: 0;
   padding-left: 16px;
 }
-
-div.image-card {
-  transition: all 0.2s ease;
-}
-
-div.image-card:hover {
-  transform: scale(1.01);
-}
