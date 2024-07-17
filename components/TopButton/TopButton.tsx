@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react'
 
-import styles from './GoToTop.module.css'
+import styles from './TopButton.module.css'
 
-export function GoToTop() {
+export function TopButton() {
   const [scrollPosition, setScrollPosition] = useState(0)
   const [show, setShow] = useState(false)
 
