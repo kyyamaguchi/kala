@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './Home.module.css'
+import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
-import { GalleryCard } from '@/components/GalleryCard'
 
 export default function Home() {
   return (
@@ -16,14 +16,14 @@ export default function Home() {
         />
         <p><strong>Kala Yamaguchi</strong> is a Native Hawaiian designer & illustrator based in San Francisco</p>
       </section>
-      <GalleryCard
+      <Media
         src="/thumbnail-2.png"
         alt="A thumbnail of a project"
         title="Dream Big — University of San Francisco"
         link="/projects/dream-big"
       />
       <Spacer size={32} />
-      <GalleryCard
+      <Media
         src="/thumbnail-2.png"
         alt="A thumbnail of a project"
         title="The Nuyu Project"

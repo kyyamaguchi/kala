@@ -6,9 +6,9 @@ import Image, { type ImageProps } from 'next/image'
 
 import { Spacer } from '@/components/Spacer'
 
-import styles from './GalleryCard.module.css'
+import styles from './Media.module.css'
 
-export interface GalleryCardProps extends Omit<ImageProps, 'alt'> {
+export interface MediaProps extends Omit<ImageProps, 'alt'> {
   title?: string
   description?: React.ReactElement
   link?: Route
@@ -17,9 +17,9 @@ export interface GalleryCardProps extends Omit<ImageProps, 'alt'> {
   video?: boolean
 }
 
-export async function GalleryCard(
+export async function Media(
   { title, description, link, cta, alt, video, ...props }:
-  GalleryCardProps
+  MediaProps
 ) {
   async function processImage(src: string) {
     const file = await fs.readFile(src)
@@ -64,7 +64,7 @@ export async function GalleryCard(
 
   return (
     <>
-      <div className={styles.card}>
+      <div id={styles["media-container"]}>
         <figure>
           {link ? <Link href={link}>{ImageWrapper}</Link> : ImageWrapper}
           {link ? <Link href={link}>{VideoWrapper}</Link> : VideoWrapper}

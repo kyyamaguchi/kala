@@ -7,9 +7,9 @@ import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
 import { Grid } from '@/components/Grid'
+import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
 import { BackButton } from '@/components/BackButton'
-import { GalleryCard } from '@/components/GalleryCard'
 import { BelowTheFold } from '@/components/BelowTheFold'
 
 import styles from './Page.module.css'
@@ -29,7 +29,7 @@ const readPage = cache(async (slug: string[]) => {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { BelowTheFold, GalleryCard, Grid, Spacer },
+      components: { BelowTheFold, Grid, Media, Spacer },
       options: {
         parseFrontmatter: true,
         mdxOptions: {

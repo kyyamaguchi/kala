@@ -6,14 +6,14 @@ description: "A brief but thorough description of the project. Lorem ipsum dolor
 published: true
 ---
 
-<GalleryCard
+<Media
   src="/thumbnail-2.png"
   alt=""
 />
 
 <Spacer size={16} />
 
-<GalleryCard
+<Media
   src="/thumbnail-2.png"
   alt=""
 />
@@ -32,18 +32,18 @@ published: true
 
 <Spacer size={16} />
 
-<GalleryCard
+<Media
   src="/thumbnail-2.png"
   alt=""
 />
 <Spacer size={16} />
 
 <Grid columns={2}>
-  <GalleryCard
+  <Media
     src="/thumbnail-2.png"
     alt=""
   />
-  <GalleryCard
+  <Media
     src="/thumbnail-2.png"
     alt=""
   />
@@ -51,7 +51,7 @@ published: true
 
 <Spacer size={16} />
 
-<GalleryCard
+<Media
   src="/thumbnail-2.png"
   alt=""
 />
@@ -59,11 +59,11 @@ published: true
 <Spacer size={16} />
 
 <Grid columns={2}>
-  <GalleryCard
+  <Media
     src="/thumbnail-2.png"
     alt=""
   />
-  <GalleryCard
+  <Media
     src="/thumbnail-2.png"
     alt=""
   />
@@ -81,7 +81,7 @@ published: true
 
 <Spacer size={16} />
 
-<GalleryCard
+<Media
   src="/thumbnail-2.png"
   alt=""
 />
