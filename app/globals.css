@@ -4,6 +4,7 @@
   --color-black:    hsla(0deg, 000%, 000%, 1.000);
   --color-white:    hsla(0deg, 000%, 100%, 1.000);
   --color-black-10: hsla(0deg, 000%, 000%, 0.067);
+  --color-black-30: hsla(0deg, 000%, 000%, 0.300);
   --color-black-50: hsla(0deg, 000%, 000%, 0.500);
 
   color: var(--color-black);

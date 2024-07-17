@@ -1,6 +1,7 @@
-nav#navbar li {
-  display: inline;
-  margin-left: 3em;
+nav#navbar > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
 nav#navbar > ul > li::before {
@@ -8,20 +9,13 @@ nav#navbar > ul > li::before {
 }
 
 nav#navbar > ul > li > a {
-  font-size: 1.25em;
-  font-weight: 300;
-  color: var(--color-black);
+  font-size: 1rem;
+  font-weight: 500;
   padding: 8px 16px;
   margin: 0 -16px;
-  border-radius: 24px;
   transition: all 0.2s ease;
 }
 
-nav#navbar > ul > li > a:hover {
-  background-color: var(--color-black-10);
-}
-
 nav#navbar > ul > li > a:active {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  color: var(--color-black);
 }

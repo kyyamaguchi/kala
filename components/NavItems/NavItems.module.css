@@ -1,0 +1,7 @@
+li > a.active {
+  color: var(--color-black);
+}
+
+li > a.inactive {
+  color: var(--color-black-50);
+}

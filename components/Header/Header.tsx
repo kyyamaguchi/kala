@@ -12,8 +12,11 @@ export function Header() {
   if (pathname.includes('projects')) return <></>
   return (
     <>
-      <header className={styles.header}>
-        <h1><Link href={`/`}>Kala Yamaguchi</Link></h1>
+      <header id={styles.header}>
+        <div id={styles["name-container"]}>
+          <h1><Link href={`/`}>Kala Yamaguchi</Link></h1>
+          <h2>Designer</h2>
+        </div>
         <Navbar />
       </header>
     </>

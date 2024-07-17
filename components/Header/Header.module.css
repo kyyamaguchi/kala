@@ -1,14 +1,30 @@
-header.header {
+header#header {
   margin-top: 64px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-header.header h1 {
-  margin: 0;
+header#header div#name-container {
+  display: flex;
+  flex-direction: column;
 }
 
-header.header h1 a {
+header#header div#name-container h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.035em;
+}
+
+header#header div#name-container h1 a {
   font-weight: 400;
+}
+
+header#header div#name-container h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: var(--color-black-30);
+  letter-spacing: -0.035em;
 }
