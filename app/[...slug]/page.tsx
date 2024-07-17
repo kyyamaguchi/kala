@@ -12,6 +12,7 @@ import { Spacer } from '@/components/Spacer'
 import { BackButton } from '@/components/BackButton'
 import { BelowTheFold } from '@/components/BelowTheFold'
 
+import './WidthOverride.css'
 import styles from './Page.module.css'
 
 const readPage = cache(async (slug: string[]) => {
