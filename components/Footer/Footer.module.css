@@ -1,3 +1,8 @@
+footer#footer {
+  max-width: 1080px;
+  margin: 0 160px;
+}
+
 footer#footer p {
   font-size: 1.25rem;
   font-weight: 300;

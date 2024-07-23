@@ -5,9 +5,10 @@ import { Spacer } from '@/components/Spacer'
 
 export default function Home() {
   return (
-    <>
+    <div id={styles.content}>
       <section id={styles.hero}>
         <Image
+          priority
           unoptimized
           src="/kala-illustration.png"
           alt="An illustration of Kala Yamaguchi"
@@ -29,6 +30,6 @@ export default function Home() {
         title="The Nuyu Project"
       />
       <Spacer size={32} />
-    </>
+    </div>
   )
 }
