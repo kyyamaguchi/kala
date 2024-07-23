@@ -7,7 +7,7 @@ published: true
 ---
 
 <Media
-  src="/thumbnail-2.png"
+  src="/job-fest.png"
   alt=""
 />
 
