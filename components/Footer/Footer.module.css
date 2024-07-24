@@ -27,14 +27,14 @@ footer#footer nav#external-links > ul > li > a {
   font-weight: 500;
   padding: 8px 16px;
   margin: 0 -16px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 footer#footer nav#external-links > ul > li > a {
   color: var(--color-black-50);
 }
 
-footer#footer nav#site-links > ul > li > a:active,
-footer#footer nav#external-links > ul > li > a:active {
+footer#footer nav#site-links > ul > li > a:hover,
+footer#footer nav#external-links > ul > li > a:hover {
   color: var(--color-black);
 }
