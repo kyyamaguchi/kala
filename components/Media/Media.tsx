@@ -4,21 +4,18 @@ import fs from 'node:fs/promises'
 import { getPlaiceholder } from 'plaiceholder'
 import Image, { type ImageProps } from 'next/image'
 
-import { Spacer } from '@/components/Spacer'
-
 import styles from './Media.module.css'
 
 export interface MediaProps extends Omit<ImageProps, 'alt'> {
   title?: string
-  description?: React.ReactElement
+  description?: React.ReactElement | string
   link?: Route
-  cta?: string
   alt?: string
   video?: boolean
 }
 
 export async function Media(
-  { title, description, link, cta, alt, video, ...props }:
+  { title, description, link, alt, video, ...props }:
   MediaProps
 ) {
   async function processImage(src: string) {
@@ -62,22 +59,27 @@ export async function Media(
     </>
   )
 
+  function LinkWrapper({ children }: { children: React.ReactElement }) {
+    return <>{link ? <Link href={link}>{children}</Link> : children}</>
+  }
+
   return (
     <>
       <div id={styles["media-container"]}>
-        <figure>
-          {link ? <Link href={link}>{ImageWrapper}</Link> : ImageWrapper}
-          {link ? <Link href={link}>{VideoWrapper}</Link> : VideoWrapper}
-          {title && <figcaption>{title}</figcaption>}
-          {description && <div>{description}</div>}
-          {
-            link &&
-              <>
-                <Spacer size={10} />
-                <Link href={link}>{cta}</Link>
-              </>
+        <LinkWrapper>
+          <figure>
+            {ImageWrapper}
+            {VideoWrapper}
+            {
+              (title || description) &&
+                <figcaption>
+                  {title && <span id={styles.title}>{title}</span>}
+                  {title && description && <br />}
+                  {description && <span id={styles.description}>{description}</span>}
+                </figcaption>
             }
-        </figure>
+          </figure>
+        </LinkWrapper>
       </div>
     </>
   )

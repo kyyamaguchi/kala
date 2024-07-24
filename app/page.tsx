@@ -20,7 +20,8 @@ export default function Home() {
       <Media
         src="/thumbnail-2.png"
         alt="A thumbnail of a project"
-        title="Dream Big — University of San Francisco"
+        title="Dream Big"
+        description="Brand Identity"
         link="/projects/dream-big"
       />
       <Spacer size={32} />
@@ -28,6 +29,8 @@ export default function Home() {
         src="/thumbnail-2.png"
         alt="A thumbnail of a project"
         title="The Nuyu Project"
+        description="Visual Identity"
+        link="/projects/nuyu"
       />
       <Spacer size={32} />
     </div>

@@ -1,19 +1,26 @@
-div#media-container img,
-div#media-container video {
+div#media-container figure img,
+div#media-container figure video {
   width: 100%;
   height: auto;
   vertical-align: middle;
   border-radius: 4px;
 }
 
-div#media-container figcaption {
-  padding: 24px 0 18px 16px;
-  font-size: 2.5rem;
-  font-weight: 300;
+div#media-container figure figcaption {
+  margin-top: 24px;
+  margin-left: 8px;
 }
 
-div#media-container p {
-  color: gray;
+div#media-container figure figcaption span#title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+div#media-container figure figcaption span#description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--color-black-50);
   margin: 0;
-  padding-left: 16px;
+  margin-top: 4px;
 }
