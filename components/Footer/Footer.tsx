@@ -17,7 +17,7 @@ export function Footer() {
       <Spacer size={`10vh`} />
       <footer id={styles.footer}>
         <Grid columns={3} columnSizeDistribution={['2fr', '1fr', '1fr']}>
-          <p>© 2024 Kala Yamaguchi</p>
+          <p>Kala Yamaguchi</p>
           <nav id={styles["site-links"]}>
             <NavItems />
           </nav>

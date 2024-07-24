@@ -5,7 +5,8 @@ footer#footer {
 
 footer#footer p {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 footer#footer nav#site-links ul,
