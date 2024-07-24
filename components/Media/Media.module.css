@@ -9,6 +9,13 @@ div#media-container figure video {
 div#media-container figure figcaption {
   margin-top: 24px;
   margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+div#media-container:hover figure figcaption,
+div#media-container:focus figure figcaption {
+  opacity: 1;
 }
 
 div#media-container figure figcaption span#title {
