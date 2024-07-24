@@ -3,5 +3,5 @@ li > a.active {
 }
 
 li > a.inactive {
-  color: var(--color-black-50);
+  color: var(--color-black-30);
 }

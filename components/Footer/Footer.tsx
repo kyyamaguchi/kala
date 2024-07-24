@@ -16,7 +16,7 @@ export function Footer() {
     <>
       <Spacer size={`10vh`} />
       <footer id={styles.footer}>
-        <Grid columns={3} columnSizeDistribution={['2fr', '1fr', '1fr']}>
+        <Grid columns={3} columnSizeDistribution={['3fr', '1fr', '1fr']}>
           <p>Kala Yamaguchi</p>
           <nav id={styles["site-links"]}>
             <NavItems />
