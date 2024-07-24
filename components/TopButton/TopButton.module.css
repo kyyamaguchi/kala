@@ -2,7 +2,7 @@ button#button {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  color: var(--color-black-50);
+  color: var(--color-black-30);
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 50%;
