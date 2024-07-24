@@ -2,7 +2,7 @@ button#button {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  color: var(--color-black);
+  color: var(--color-black-50);
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 50%;
@@ -13,7 +13,5 @@ button#button {
 }
 
 button#button:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
+  color: var(--color-black);
 }
