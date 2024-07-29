@@ -1,20 +1,30 @@
-header.header {
+a#link-wrapper {
+  font-weight: unset;
+}
+
+hr#divider {
+  margin-top: 96px;
+}
+
+header#header {
   margin-top: 96px;
   margin-bottom: 48px;
 }
 
-h1.title {
+h1#title {
   margin: 0;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -0.035em;
 }
 
-p.description {
-  margin: 0;
-}
-
-p.subtitle {
+p#subtitle {
   margin-bottom: 0;
-  font-style: italic;
-  font-weight: 300;
+  margin-top: 0.75rem;
+  font-weight: 400;
+  color: var(--color-black-50);
+}
+
+p#description {
+  margin: 0;
 }
