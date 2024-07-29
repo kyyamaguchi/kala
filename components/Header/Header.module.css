@@ -1,6 +1,6 @@
 header#header {
   max-width: 1080px;
-  margin: 64px 160px 0 160px;
+  margin: 64px var(--margin-large) 0 var(--margin-large);
   display: flex;
   justify-content: space-between;
   align-items: baseline;

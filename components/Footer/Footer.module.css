@@ -1,6 +1,6 @@
 footer#footer {
   max-width: 1080px;
-  margin: 0 160px;
+  margin: 0 var(--margin-large);
 }
 
 footer#footer p {

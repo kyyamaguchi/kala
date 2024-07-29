@@ -1,6 +1,6 @@
 div.content {
   max-width: 1400px;
-  margin: 0 160px;
+  margin: 0 var(--margin-large);
 }
 
 header.header {

@@ -9,6 +9,9 @@
 
   color: var(--color-black);
   background-color: var(--color-white);
+
+  --margin-large: 160px;
+  --margin-small:  80px;
 }
 
 * {
