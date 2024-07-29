@@ -4,9 +4,10 @@ div#content {
 }
 
 section#hero {
+  margin: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 64px;
 }
 
 section#hero p {
@@ -32,5 +33,12 @@ section#hero p {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1160px) {
+  section#hero {
+    flex-direction: column;
+    margin: 40px;
   }
 }
