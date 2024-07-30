@@ -31,3 +31,9 @@ div#media-container figure figcaption span#description {
   margin: 0;
   margin-top: 4px;
 }
+
+@media (pointer: coarse) {
+  div#media-container figure figcaption {
+    opacity: 1;
+  }
+}
