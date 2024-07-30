@@ -82,19 +82,21 @@ ul ul > li {
   margin-left: 1em;
 }
 
-@keyframes move-out {
+@keyframes fade-out {
   from {
-    transform: translateY(0%);
+    opacity: 1;
   }
 
   to {
-    transform: translateY(-100%);
+    opacity: 0;
   }
 }
 
 @keyframes move-in {
   from {
-    transform: translateY(100%);
+    /* 100% (viewport height) - 10vh (footer spacer) - 48px (header bottom margin) - 98px (header rough height) - 96px (header top margin) */
+    /* note: 98px works as an example; won't be exact unless BelowTheFold is clamped at a specific height */
+    transform: translateY(calc(100% - 10vh - 48px - 98px - 96px));
   }
 
   to {
@@ -103,9 +105,10 @@ ul ul > li {
 }
 
 ::view-transition-old(root) {
-  animation: 1s ease both move-out;
+  animation: 0.2s ease both fade-out;
 }
 
 ::view-transition-new(root) {
-  animation: 1s ease both move-in;
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) both move-in;
+  animation-delay: 0.2s;
 }
