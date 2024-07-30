@@ -11,7 +11,10 @@
   background-color: var(--color-white);
 
   --margin-large: 160px;
-  --margin-small:  80px;
+  --margin-small: 80px;
+
+  --max-width: 1080px;
+  --max-width-projects: 1400px;
 }
 
 * {
@@ -22,11 +25,14 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  margin: 0 80px;
   line-height: 180%;
   font-size: 1rem;
   font-family: var(--font);
+}
+
+main {
+  margin: 0 auto;
 }
 
 h1,

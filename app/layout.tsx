@@ -7,6 +7,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Cursor } from '@/components/Cursor'
 import { TopButton } from '@/components/TopButton'
+import { MainWrapper } from '@/components/MainWrapper'
 
 import './globals.css'
 
@@ -40,14 +41,14 @@ export default function RootLayout(
         className={`${inter.variable}`}
       >
         <body>
-          <main>
+          <MainWrapper>
             <Header />
             {children}
             <Footer />
             <Spacer size={`10vh`} />
             <TopButton />
             <Cursor />
-          </main>
+          </MainWrapper>
         </body>
       </html>
     </ViewTransitions>

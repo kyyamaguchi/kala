@@ -1,6 +1,5 @@
 header#header {
-  max-width: 1080px;
-  margin: 64px var(--margin-large) 0 var(--margin-large);
+  margin-top: 64px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -28,4 +27,10 @@ header#header div#name-container h2 {
   font-size: 1.15rem;
   color: var(--color-black-30);
   letter-spacing: -0.035em;
+}
+
+@media (max-width: 1160px) {
+  header#header {
+    flex-direction: column;
+  }
 }
