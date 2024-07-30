@@ -10,12 +10,12 @@ export default function Home() {
         <Image
           priority
           unoptimized
-          src="/kala-illustration.png"
+          src="/kala-illustration-2.png"
           alt="An illustration of Kala Yamaguchi"
-          width={734}
-          height={949}
+          width={330}
+          height={560}
         />
-        <p><strong>Kala Yamaguchi</strong> is a Native Hawaiian designer & illustrator based in San Francisco</p>
+        <p><strong>Kala Yamaguchi</strong> is a Native Hawaiian designer &amp; illustrator based in San Francisco</p>
       </section>
       <Media
         src="/thumbnail-2.png"
@@ -32,7 +32,6 @@ export default function Home() {
         description="Visual Identity"
         link="/projects/nuyu"
       />
-      <Spacer size={32} />
     </div>
   )
 }
