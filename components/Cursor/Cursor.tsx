@@ -31,8 +31,8 @@ export function Cursor() {
 
   const animate = useCallback(() => {
     const { x, y } = delayedCursorRef.current
-    delayedCursorRef.current.x = lerp(x, mouse.current.x, 0.2)
-    delayedCursorRef.current.y = lerp(y, mouse.current.y, 0.2)
+    delayedCursorRef.current.x = mouse.current.x
+    delayedCursorRef.current.y = mouse.current.y
     moveCursor(delayedCursorRef.current.x, delayedCursorRef.current.y)
     window.requestAnimationFrame(animate)
   }, [])
