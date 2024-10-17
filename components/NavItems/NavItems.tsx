@@ -8,7 +8,6 @@ import styles from './NavItems.module.css'
 export function NavItems() {
   const navItems = [
     { href: '/', text: 'Work' },
-    { href: '/studio', text: 'Studio' },
     { href: '/about', text: 'About' }
   ]
   return (
