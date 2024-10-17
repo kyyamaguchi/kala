@@ -1,7 +1,8 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Link, { type LinkProps } from 'next/link'
+import { Link } from 'next-view-transitions'
+import { type LinkProps } from 'next/link'
 
 import styles from './NavItems.module.css'
 
