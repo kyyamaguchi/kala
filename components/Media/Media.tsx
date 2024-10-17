@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import { type Route } from 'next'
 import fs from 'node:fs/promises'
+import { Link } from 'next-view-transitions'
 import { getPlaiceholder } from 'plaiceholder'
 import Image, { type ImageProps } from 'next/image'
 
