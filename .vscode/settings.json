@@ -2,5 +2,6 @@
   "markdownlint.config": {
     "MD025": false, // Multiple top level headers in the same document
     "MD033": false // Inline HTML
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
