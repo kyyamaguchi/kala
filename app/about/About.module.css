@@ -1,0 +1,13 @@
+article.about {
+  display: flex;
+  gap: 32px;
+}
+
+article.about img {
+  border-radius: 6px;
+}
+
+article.about section.text a {
+  color: var(--color-black-50);
+  font-weight: 500;
+}
