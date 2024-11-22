@@ -1,24 +1,17 @@
 section#hero {
-  margin: 80px 0;
+  max-width: 750px;
+  margin: 80px auto;
   display: flex;
   align-items: center;
   gap: 96px;
 }
 
 section#hero p {
-  max-width: 450px;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--color-black-50);
-}
-
-section#hero p strong {
-  font-weight: 400;
-  color: var(--color-black);
-}
-
-section#hero p {
   animation: fadeIn 1s ease forwards;
+}
+
+section#hero p.subtle {
+  color: var(--color-black-50);
 }
 
 @keyframes fadeIn {

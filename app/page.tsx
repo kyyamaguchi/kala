@@ -18,7 +18,14 @@ export default function Home() {
           width={330}
           height={560}
         />
-        <p><strong>Kala Yamaguchi</strong> is a Native Hawaiian designer &amp; illustrator based in San Francisco</p>
+        <div>
+          <p>
+            Dedicated to innovative creativity, building compelling brands, and the beauty of simplicity in high craftsmanship.
+          </p>
+          <p className={styles.subtle}>
+            Based in San Francisco.
+          </p>
+        </div>
       </section>
       <FadeWrapper>
         <Media
