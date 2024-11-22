@@ -8,6 +8,5 @@ article.about img {
 }
 
 article.about section.text a {
-  color: var(--color-black-50);
   font-weight: 500;
 }

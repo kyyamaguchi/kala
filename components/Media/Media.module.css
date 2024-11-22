@@ -1,3 +1,7 @@
+div#media-container a {
+  color: var(--color-black);
+}
+
 div#media-container figure img,
 div#media-container figure video {
   width: 100%;

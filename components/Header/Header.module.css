@@ -19,6 +19,7 @@ header#header div#name-container h1 {
 
 header#header div#name-container h1 a {
   font-weight: 400;
+  color: var(--color-black);
 }
 
 header#header div#name-container h2 {
