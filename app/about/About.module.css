@@ -1,10 +1,14 @@
 article.about {
   display: flex;
-  gap: 32px;
+  gap: 64px;
 }
 
 article.about img {
   border-radius: 6px;
+}
+
+article.about section p strong {
+  font-weight: 500;
 }
 
 article.about section.text a {
