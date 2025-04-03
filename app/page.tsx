@@ -32,7 +32,6 @@ export default function Home() {
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="Dream Big"
-          description="Brand Identity"
           link="/projects/dream-big"
         />
       </FadeWrapper>
@@ -42,7 +41,6 @@ export default function Home() {
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="The Nuyu Project"
-          description="Visual Identity"
           link="/projects/nuyu"
         />
       </FadeWrapper>
@@ -52,7 +50,6 @@ export default function Home() {
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="Dream Big"
-          description="Brand Identity"
           link="/projects/dream-big"
         />
       </FadeWrapper>
@@ -62,7 +59,6 @@ export default function Home() {
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="The Nuyu Project"
-          description="Visual Identity"
           link="/projects/nuyu"
         />
       </FadeWrapper>
@@ -72,7 +68,6 @@ export default function Home() {
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="Dream Big"
-          description="Brand Identity"
           link="/projects/dream-big"
         />
       </FadeWrapper>
@@ -82,7 +77,6 @@ export default function Home() {
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="The Nuyu Project"
-          description="Visual Identity"
           link="/projects/nuyu"
         />
       </FadeWrapper>
