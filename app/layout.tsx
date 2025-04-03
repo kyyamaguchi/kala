@@ -4,7 +4,6 @@ import { ViewTransitions } from 'next-view-transitions'
 
 import { Spacer } from '@/components/Spacer'
 import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
 import { Cursor } from '@/components/Cursor'
 import { MainWrapper } from '@/components/MainWrapper'
 
@@ -43,7 +42,6 @@ export default function RootLayout(
           <MainWrapper>
             <Header />
             {children}
-            <Footer />
             <Spacer size={`10vh`} />
             <Cursor />
           </MainWrapper>
