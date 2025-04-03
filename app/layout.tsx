@@ -6,7 +6,6 @@ import { Spacer } from '@/components/Spacer'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Cursor } from '@/components/Cursor'
-import { TopButton } from '@/components/TopButton'
 import { MainWrapper } from '@/components/MainWrapper'
 
 import './globals.css'
@@ -46,7 +45,6 @@ export default function RootLayout(
             {children}
             <Footer />
             <Spacer size={`10vh`} />
-            <TopButton />
             <Cursor />
           </MainWrapper>
         </body>
