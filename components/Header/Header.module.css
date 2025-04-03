@@ -13,8 +13,8 @@ header#header div#name-container {
 header#header div#name-container h1 {
   margin: 0;
   font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing: -0.035em;
+  font-size: 1.25rem;
+  letter-spacing: -0.05em;
 }
 
 header#header div#name-container h1 a {
@@ -24,8 +24,8 @@ header#header div#name-container h1 a {
 
 header#header div#name-container h2 {
   margin: 0;
-  font-weight: 400;
-  font-size: 1.15rem;
+  font-weight: 500;
+  font-size: 1rem;
   color: var(--color-black-30);
   letter-spacing: -0.035em;
 }
