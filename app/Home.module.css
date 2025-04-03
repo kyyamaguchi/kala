@@ -11,7 +11,8 @@ section#hero p {
 }
 
 section#hero p.subtle {
-  color: var(--color-black-50);
+  color: var(--color-black-30);
+  font-size: 0.9rem;
 }
 
 @keyframes fadeIn {

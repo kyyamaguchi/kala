@@ -19,7 +19,7 @@ export default function Home() {
           height={560}
         />
         <div>
-          <p>
+          <p style={{ lineHeight: '150%' }}>
             Dedicated to innovative creativity, building compelling brands, and the beauty of simplicity in high craftsmanship.
           </p>
           <p className={styles.subtle}>
