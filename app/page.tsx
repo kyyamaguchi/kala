@@ -36,7 +36,7 @@ export default function Home() {
           link="/projects/dream-big"
         />
       </FadeWrapper>
-      <Spacer size={32} />
+      <Spacer size={48} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -46,7 +46,7 @@ export default function Home() {
           link="/projects/nuyu"
         />
       </FadeWrapper>
-      <Spacer size={32} />
+      <Spacer size={48} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -56,7 +56,7 @@ export default function Home() {
           link="/projects/dream-big"
         />
       </FadeWrapper>
-      <Spacer size={32} />
+      <Spacer size={48} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -66,7 +66,7 @@ export default function Home() {
           link="/projects/nuyu"
         />
       </FadeWrapper>
-      <Spacer size={32} />
+      <Spacer size={48} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -76,7 +76,7 @@ export default function Home() {
           link="/projects/dream-big"
         />
       </FadeWrapper>
-      <Spacer size={32} />
+      <Spacer size={48} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
