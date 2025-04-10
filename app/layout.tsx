@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { ViewTransitions } from 'next-view-transitions'
 
 import { Spacer } from '@/components/Spacer'
@@ -8,12 +7,6 @@ import { Cursor } from '@/components/Cursor'
 import { MainWrapper } from '@/components/MainWrapper'
 
 import './globals.css'
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
-  variable: '--font-inter'
-})
 
 let metadataBase: URL
 if (process.env.VERCEL_URL) metadataBase = new URL('https://kalayama.vercel.app')
@@ -34,10 +27,7 @@ export default function RootLayout(
 ) {
   return (
     <ViewTransitions>
-      <html
-        lang="en"
-        className={`${inter.variable}`}
-      >
+      <html lang="en">
         <body>
           <MainWrapper>
             <Header />

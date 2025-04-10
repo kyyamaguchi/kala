@@ -14,7 +14,7 @@ header#header div#name-container h1 {
   margin: 0;
   font-weight: 500;
   font-size: 1.25rem;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
 }
 
 header#header div#name-container h1 a {
@@ -27,7 +27,7 @@ header#header div#name-container h2 {
   font-weight: 500;
   font-size: 1rem;
   color: var(--color-black-30);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
 }
 
 @media (max-width: 1160px) {

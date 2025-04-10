@@ -13,10 +13,10 @@ export default function Home() {
         <Image
           priority
           unoptimized
-          src="/kala-illustration-2.png"
+          src="/illustration.jpg"
           alt="An illustration of Kala Yamaguchi"
-          width={330}
-          height={560}
+          width={1371/4.4}
+          height={2132/4.4}
         />
         <div>
           <p style={{ lineHeight: '150%' }}>
@@ -35,7 +35,7 @@ export default function Home() {
           link="/projects/dream-big"
         />
       </FadeWrapper>
-      <Spacer size={48} />
+      <Spacer size={64} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -44,7 +44,7 @@ export default function Home() {
           link="/projects/nuyu"
         />
       </FadeWrapper>
-      <Spacer size={48} />
+      <Spacer size={64} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -53,7 +53,7 @@ export default function Home() {
           link="/projects/dream-big"
         />
       </FadeWrapper>
-      <Spacer size={48} />
+      <Spacer size={64} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -62,7 +62,7 @@ export default function Home() {
           link="/projects/nuyu"
         />
       </FadeWrapper>
-      <Spacer size={48} />
+      <Spacer size={64} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
@@ -71,7 +71,7 @@ export default function Home() {
           link="/projects/dream-big"
         />
       </FadeWrapper>
-      <Spacer size={48} />
+      <Spacer size={64} />
       <FadeWrapper>
         <Media
           src="/thumbnail-2.png"
