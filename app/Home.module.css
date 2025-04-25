@@ -36,3 +36,9 @@ section#hero p.subtle {
     align-self: flex-start;
   }
 }
+
+@media (max-width: 768px) {
+  section#hero img {
+    display: none;
+  }
+}
