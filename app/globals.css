@@ -11,7 +11,7 @@
   background-color: var(--color-white);
 
   --margin-large: 160px;
-  --margin-small: 80px;
+  --margin-small: 40px;
 
   --max-width: 1150px;
   --max-width-projects: 1400px;
@@ -108,4 +108,10 @@ p {
 
 ::view-transition-new(root) {
   animation-delay: 0.2s;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0 var(--margin-small);
+  }
 }
