@@ -14,3 +14,15 @@ article.about section p strong {
 article.about section.text a {
   font-weight: 500;
 }
+
+@media (max-width: 1160px) {
+  article.about {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  article.about img {
+    width: 100%;
+    height: auto;
+  }
+}
