@@ -27,7 +27,6 @@ header#header div#name-container h2 {
   font-weight: 500;
   font-size: 1rem;
   color: var(--color-black-30);
-  letter-spacing: -0.02em;
 }
 
 @media (max-width: 1160px) {
