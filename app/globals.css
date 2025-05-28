@@ -89,7 +89,6 @@ ul ul > li {
 
 p {
   max-width: 700px;
-  letter-spacing: -0.015em;
 }
 
 @keyframes fade-out {
