@@ -16,3 +16,9 @@ div#cursor.blur {
   background: radial-gradient(50% 50% at 50% 50%, rgba(164, 164, 164, 0.5) 0%, rgba(164, 164, 164, 0.5) 100%);
   backdrop-filter: blur(2px);
 }
+
+@media (pointer: coarse) {
+  div#cursor {
+    display: none;
+  }
+}
