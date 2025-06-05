@@ -2,84 +2,150 @@ import Image from 'next/image'
 
 import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
-import { FadeWrapper } from '@/components/FadeWrapper'
+import * as motion from 'motion/react-client'
+import type { TargetAndTransition, Transition } from 'motion/react'
 
 import styles from './Home.module.css'
 
 export default function Home() {
+  const fadeInFrom: TargetAndTransition = {
+    opacity: 0,
+    transform: "translateY(24px)"
+  }
+  const fadeInTo: TargetAndTransition = {
+    opacity: 1,
+    transform: "translateY(0px)"
+  }
+  const fadeInProps: Transition = {
+    type: 'tween',
+    ease: 'easeOut',
+    duration: 0.8
+  }
+
   return (
     <div id={styles.content}>
       <section id={styles.hero}>
-        <Image
-          priority
-          unoptimized
-          src="/illustration.jpg"
-          alt="An illustration of Kala Yamaguchi"
-          width={1371/4.4}
-          height={2132/4.4}
-        />
+
+        {/* Hero image */}
+        <motion.div
+          initial={fadeInFrom}
+          animate={fadeInTo}
+          transition={fadeInProps}
+        >
+          <Image
+            priority
+            unoptimized
+            src="/illustration.jpg"
+            alt="An illustration of Kala Yamaguchi"
+            width={1371/4.4}
+            height={2132/4.4}
+          />
+        </motion.div>
+
+        {/* Hero text */}
         <div>
-          <p style={{ lineHeight: '150%' }}>
+          <motion.p
+            className={styles.subtitle}
+            initial={fadeInFrom}
+            animate={fadeInTo}
+            transition={{
+              ...fadeInProps,
+              delay: 0.3
+            }}
+          >
             Dedicated to innovative creativity, building compelling brands, and the beauty of simplicity in high craftsmanship.
-          </p>
-          <p className={styles.subtle}>
+          </motion.p>
+          <motion.p
+            className={styles.subtle}
+            initial={fadeInFrom}
+            animate={fadeInTo}
+            transition={{
+              ...fadeInProps,
+              delay: 0.5
+            }}
+          >
             Based in San Francisco.
-          </p>
+          </motion.p>
         </div>
       </section>
-      <FadeWrapper>
+
+      <motion.div
+        initial={fadeInFrom}
+        whileInView={fadeInTo}
+        transition={fadeInProps}
+      >
         <Media
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="Dream Big"
           link="/projects/dream-big"
         />
-      </FadeWrapper>
-      <Spacer size={64} />
-      <FadeWrapper>
+      </motion.div>
+      <Spacer size={32} />
+      <motion.div
+        initial={fadeInFrom}
+        whileInView={fadeInTo}
+        transition={fadeInProps}
+      >
         <Media
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="The Nuyu Project"
           link="/projects/nuyu"
         />
-      </FadeWrapper>
-      <Spacer size={64} />
-      <FadeWrapper>
+      </motion.div>
+      <Spacer size={32} />
+      <motion.div
+        initial={fadeInFrom}
+        whileInView={fadeInTo}
+        transition={fadeInProps}
+      >
         <Media
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="Dream Big"
           link="/projects/dream-big"
         />
-      </FadeWrapper>
-      <Spacer size={64} />
-      <FadeWrapper>
+      </motion.div>
+      <Spacer size={32} />
+      <motion.div
+        initial={fadeInFrom}
+        whileInView={fadeInTo}
+        transition={fadeInProps}
+      >
         <Media
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="The Nuyu Project"
           link="/projects/nuyu"
         />
-      </FadeWrapper>
-      <Spacer size={64} />
-      <FadeWrapper>
+      </motion.div>
+      <Spacer size={32} />
+      <motion.div
+        initial={fadeInFrom}
+        whileInView={fadeInTo}
+        transition={fadeInProps}
+      >
         <Media
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="Dream Big"
           link="/projects/dream-big"
         />
-      </FadeWrapper>
-      <Spacer size={64} />
-      <FadeWrapper>
+      </motion.div>
+      <Spacer size={32} />
+      <motion.div
+        initial={fadeInFrom}
+        whileInView={fadeInTo}
+        transition={fadeInProps}
+      >
         <Media
           src="/thumbnail-2.png"
           alt="A thumbnail of a project"
           title="The Nuyu Project"
           link="/projects/nuyu"
         />
-      </FadeWrapper>
+      </motion.div>
     </div>
   )
 }

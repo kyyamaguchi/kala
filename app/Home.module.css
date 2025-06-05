@@ -6,24 +6,13 @@ section#hero {
   gap: 96px;
 }
 
-section#hero p {
-  animation: fadeIn 1s ease forwards;
+section#hero p.subtitle {
+  line-height: 150%;
 }
 
 section#hero p.subtle {
   color: var(--color-black-30);
   font-size: 0.9rem;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 1160px) {
