@@ -8,6 +8,7 @@ section#hero {
 
 section#hero p.subtitle {
   line-height: 150%;
+  max-width: 400px;
 }
 
 section#hero p.subtle {
