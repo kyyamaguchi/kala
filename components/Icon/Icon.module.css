@@ -1,0 +1,4 @@
+a.link:hover svg {
+  fill: var(--color-black);
+  transition: all 0.3s ease;
+}

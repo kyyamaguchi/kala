@@ -1,42 +1,35 @@
-footer#footer p {
-  font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
+footer#footer {
+  display: flex;
+  justify-content: space-between;
 }
 
-footer#footer nav#site-links ul,
+footer#footer p {
+  color: var(--color-black-30);
+}
+
 footer#footer nav#external-links ul {
   display: flex;
-  flex-direction: column;
   gap: 16px;
-  text-align: right;
 }
 
-footer#footer nav#site-links > ul > li::before,
 footer#footer nav#external-links > ul > li::before {
   content: none;
 }
 
-footer#footer nav#site-links > ul > li > a,
-footer#footer nav#external-links > ul > li > a {
+footer#footer a {
   font-size: 1rem;
   font-weight: 500;
   padding: 8px 16px;
   margin: 0 -16px;
   transition: all 0.3s ease;
-}
-
-footer#footer nav#external-links > ul > li > a {
   color: var(--color-black-30);
 }
 
-footer#footer nav#site-links > ul > li > a:hover,
-footer#footer nav#external-links > ul > li > a:hover {
+footer#footer a:hover {
   color: var(--color-black);
 }
 
 @media (max-width: 700px) {
-  footer#footer nav#site-links ul,
   footer#footer nav#external-links ul {
     text-align: left;
   }
