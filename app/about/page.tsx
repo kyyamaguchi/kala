@@ -20,7 +20,7 @@ export default function About() {
             <strong>Hey, I&apos;m Kala.</strong>
           </p>
           <p>
-            I&apos;m a designer who&apos;s truly cool and has a fun time. Originally from Oahu, Hawai&apos;i, I moved to San Francisco for undergrad, where I&apos;m currently in my 4th year. I grew up playing baseball (...)
+            I am a graphic designer currently finishing my undergraduate degree at the University of San Francisco. As a designer, I have a deep appreciation and admiration for the complexities and intricacies of the design process. For me, the creative process is a journey and an adventure. The final output is the culmination of this exploration. My work spans a number of disciplines, ranging from brand identity design, publication design, and some illustration. Currently, I have been given the honor of working as lead in-house designer at the University of San Francisco within the Career Services department. In this role, I lead a small team in creating visual identities for career-related conferences and events, as well as designing essential collateral materials that support the office&apos;s initiatives.
           </p>
           <p>
             You can learn more about my work on my <Link href="#">résumé</Link>.
