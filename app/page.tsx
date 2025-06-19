@@ -53,7 +53,7 @@ export default function Home() {
               delay: 0.3
             }}
           >
-            Dedicated to innovative creativity, building compelling brands, and the beauty of simplicity in high craftsmanship.
+            A visual working across digital and print, focusing his craft on building branding systems through strategy, intentional simplicity, and meticulous execution.
           </motion.p>
           <motion.p
             className={styles.subtle}
@@ -64,7 +64,7 @@ export default function Home() {
               delay: 0.5
             }}
           >
-            Based in San Francisco.
+            Based in San Francisco, CA.
           </motion.p>
         </div>
       </section>
