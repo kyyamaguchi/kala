@@ -49,7 +49,7 @@ export default function Home() {
             animate={fadeInTo}
             transition={{
               ...fadeInProps,
-              delay: 0.5
+              delay: 0.3
             }}
             viewport={{ once: true }}
           >
