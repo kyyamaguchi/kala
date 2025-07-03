@@ -2,14 +2,14 @@
 
 import { Link } from 'next-view-transitions'
 import { usePathname } from 'next/navigation'
+import * as motion from 'motion/react-client'
 
 import { Navbar } from '@/components/Navbar'
 
 import styles from './Header.module.css'
+import { fadeInFrom, fadeInTo, fadeInProps } from '@/lib/animations'
 
-export function Header() {
-  const pathname = usePathname()
-  if (pathname.includes('projects')) return <></>
+function HeaderContent() {
   return (
     <>
       <header id={styles.header}>
@@ -20,5 +20,22 @@ export function Header() {
         <Navbar />
       </header>
     </>
+  )
+}
+
+export function Header() {
+  const pathname = usePathname()
+  if (pathname.includes('projects')) return <></>
+  if (pathname.includes('about')) return <HeaderContent />
+
+  return (
+    <motion.div
+      initial={fadeInFrom}
+      animate={fadeInTo}
+      transition={fadeInProps}
+      viewport={{ once: true }}
+    >
+      <HeaderContent />
+    </motion.div>
   )
 }

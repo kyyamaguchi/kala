@@ -2,24 +2,11 @@ import Image from 'next/image'
 import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
 import * as motion from 'motion/react-client'
-import type { TargetAndTransition, Transition } from 'motion/react'
 
 import styles from './Home.module.css'
+import { fadeInFrom, fadeInProps, fadeInTo } from '@/lib/animations'
 
 export default function Home() {
-  const fadeInFrom: TargetAndTransition = {
-    opacity: 0,
-    transform: "translateY(24px)"
-  }
-  const fadeInTo: TargetAndTransition = {
-    opacity: 1,
-    transform: "translateY(0px)"
-  }
-  const fadeInProps: Transition = {
-    type: 'tween',
-    ease: 'easeOut',
-    duration: 0.8
-  }
 
   return (
     <div id={styles.content}>
