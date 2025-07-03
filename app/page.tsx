@@ -16,7 +16,10 @@ export default function Home() {
         <motion.div
           initial={fadeInFrom}
           animate={fadeInTo}
-          transition={fadeInProps}
+          transition={{
+            ...fadeInProps,
+            delay: 0.3
+          }}
           viewport={{ once: true }}
         >
           <Image
@@ -60,86 +63,96 @@ export default function Home() {
 
       <motion.div
         initial={fadeInFrom}
-        whileInView={fadeInTo}
-        transition={fadeInProps}
+        animate={fadeInTo}
+        transition={{
+          ...fadeInProps,
+          delay: 0.5
+        }}
         viewport={{ once: true }}
       >
-        <Media
-          src="/thumbnail-2.png"
-          alt="A thumbnail of a project"
-          title="Dream Big"
-          link="/projects/dream-big"
-        />
-      </motion.div>
-      <Spacer size={32} />
-      <motion.div
-        initial={fadeInFrom}
-        whileInView={fadeInTo}
-        transition={fadeInProps}
-        viewport={{ once: true }}
-      >
-        <Media
-          src="/thumbnail-2.png"
-          alt="A thumbnail of a project"
-          title="The Nuyu Project"
-          link="/projects/nuyu"
-        />
-      </motion.div>
-      <Spacer size={32} />
-      <motion.div
-        initial={fadeInFrom}
-        whileInView={fadeInTo}
-        transition={fadeInProps}
-        viewport={{ once: true }}
-      >
-        <Media
-          src="/thumbnail-2.png"
-          alt="A thumbnail of a project"
-          title="Dream Big"
-          link="/projects/dream-big"
-        />
-      </motion.div>
-      <Spacer size={32} />
-      <motion.div
-        initial={fadeInFrom}
-        whileInView={fadeInTo}
-        transition={fadeInProps}
-        viewport={{ once: true }}
-      >
-        <Media
-          src="/thumbnail-2.png"
-          alt="A thumbnail of a project"
-          title="The Nuyu Project"
-          link="/projects/nuyu"
-        />
-      </motion.div>
-      <Spacer size={32} />
-      <motion.div
-        initial={fadeInFrom}
-        whileInView={fadeInTo}
-        transition={fadeInProps}
-        viewport={{ once: true }}
-      >
-        <Media
-          src="/thumbnail-2.png"
-          alt="A thumbnail of a project"
-          title="Dream Big"
-          link="/projects/dream-big"
-        />
-      </motion.div>
-      <Spacer size={32} />
-      <motion.div
-        initial={fadeInFrom}
-        whileInView={fadeInTo}
-        transition={fadeInProps}
-        viewport={{ once: true }}
-      >
-        <Media
-          src="/thumbnail-2.png"
-          alt="A thumbnail of a project"
-          title="The Nuyu Project"
-          link="/projects/nuyu"
-        />
+        <motion.div
+          initial={fadeInFrom}
+          whileInView={fadeInTo}
+          transition={fadeInProps}
+          viewport={{ once: true }}
+        >
+          <Media
+            src="/thumbnail-2.png"
+            alt="A thumbnail of a project"
+            title="Dream Big"
+            link="/projects/dream-big"
+          />
+        </motion.div>
+        <Spacer size={32} />
+        <motion.div
+          initial={fadeInFrom}
+          whileInView={fadeInTo}
+          transition={fadeInProps}
+          viewport={{ once: true }}
+        >
+          <Media
+            src="/thumbnail-2.png"
+            alt="A thumbnail of a project"
+            title="The Nuyu Project"
+            link="/projects/nuyu"
+          />
+        </motion.div>
+        <Spacer size={32} />
+        <motion.div
+          initial={fadeInFrom}
+          whileInView={fadeInTo}
+          transition={fadeInProps}
+          viewport={{ once: true }}
+        >
+          <Media
+            src="/thumbnail-2.png"
+            alt="A thumbnail of a project"
+            title="Dream Big"
+            link="/projects/dream-big"
+          />
+        </motion.div>
+        <Spacer size={32} />
+        <motion.div
+          initial={fadeInFrom}
+          whileInView={fadeInTo}
+          transition={fadeInProps}
+          viewport={{ once: true }}
+        >
+          <Media
+            src="/thumbnail-2.png"
+            alt="A thumbnail of a project"
+            title="The Nuyu Project"
+            link="/projects/nuyu"
+          />
+        </motion.div>
+        <Spacer size={32} />
+        <motion.div
+          initial={fadeInFrom}
+          whileInView={fadeInTo}
+          transition={fadeInProps}
+          viewport={{ once: true }}
+        >
+          <Media
+            src="/thumbnail-2.png"
+            alt="A thumbnail of a project"
+            title="Dream Big"
+            link="/projects/dream-big"
+          />
+        </motion.div>
+        <Spacer size={32} />
+        <motion.div
+          initial={fadeInFrom}
+          whileInView={fadeInTo}
+          transition={fadeInProps}
+          viewport={{ once: true }}
+        >
+          <Media
+            src="/thumbnail-2.png"
+            alt="A thumbnail of a project"
+            title="The Nuyu Project"
+            link="/projects/nuyu"
+          />
+        </motion.div>
       </motion.div>
     </div>
   )
