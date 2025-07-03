@@ -1,5 +1,4 @@
 import Image from 'next/image'
-
 import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
 import * as motion from 'motion/react-client'
@@ -31,6 +30,7 @@ export default function Home() {
           initial={fadeInFrom}
           animate={fadeInTo}
           transition={fadeInProps}
+          viewport={{ once: true }}
         >
           <Image
             priority
@@ -52,6 +52,7 @@ export default function Home() {
               ...fadeInProps,
               delay: 0.3
             }}
+            viewport={{ once: true }}
           >
             A visual designer working across digital and print, focusing his craft on building branding systems through strategy, intentional simplicity, and meticulous execution.
           </motion.p>
@@ -63,6 +64,7 @@ export default function Home() {
               ...fadeInProps,
               delay: 0.5
             }}
+            viewport={{ once: true }}
           >
             Based in San Francisco, CA.
           </motion.p>
@@ -73,6 +75,7 @@ export default function Home() {
         initial={fadeInFrom}
         whileInView={fadeInTo}
         transition={fadeInProps}
+        viewport={{ once: true }}
       >
         <Media
           src="/thumbnail-2.png"
@@ -86,6 +89,7 @@ export default function Home() {
         initial={fadeInFrom}
         whileInView={fadeInTo}
         transition={fadeInProps}
+        viewport={{ once: true }}
       >
         <Media
           src="/thumbnail-2.png"
@@ -99,6 +103,7 @@ export default function Home() {
         initial={fadeInFrom}
         whileInView={fadeInTo}
         transition={fadeInProps}
+        viewport={{ once: true }}
       >
         <Media
           src="/thumbnail-2.png"
@@ -112,6 +117,7 @@ export default function Home() {
         initial={fadeInFrom}
         whileInView={fadeInTo}
         transition={fadeInProps}
+        viewport={{ once: true }}
       >
         <Media
           src="/thumbnail-2.png"
@@ -125,6 +131,7 @@ export default function Home() {
         initial={fadeInFrom}
         whileInView={fadeInTo}
         transition={fadeInProps}
+        viewport={{ once: true }}
       >
         <Media
           src="/thumbnail-2.png"
@@ -138,6 +145,7 @@ export default function Home() {
         initial={fadeInFrom}
         whileInView={fadeInTo}
         transition={fadeInProps}
+        viewport={{ once: true }}
       >
         <Media
           src="/thumbnail-2.png"
