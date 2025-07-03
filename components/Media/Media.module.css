@@ -28,3 +28,12 @@ div#media-container figure figcaption span#description {
   margin: 0;
   margin-top: 4px;
 }
+
+@media (max-width: 768px) {
+  div#media-container figure figcaption {
+    margin-top: 16px;
+  }
+  div#media-container figure figcaption span#title {
+    font-size: 1rem;
+  }
+}
