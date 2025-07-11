@@ -80,6 +80,7 @@ export default function Home() {
             src="/thumbnail-2.png"
             alt="A thumbnail of a project"
             title="Dream Big"
+            description="Brand Identity"
             link="/projects/dream-big"
           />
         </motion.div>
@@ -94,6 +95,7 @@ export default function Home() {
             src="/thumbnail-2.png"
             alt="A thumbnail of a project"
             title="The Nuyu Project"
+            description="Brand Identity"
             link="/projects/nuyu"
           />
         </motion.div>
@@ -108,6 +110,7 @@ export default function Home() {
             src="/thumbnail-2.png"
             alt="A thumbnail of a project"
             title="Dream Big"
+            description="Brand Identity"
             link="/projects/dream-big"
           />
         </motion.div>
@@ -122,6 +125,7 @@ export default function Home() {
             src="/thumbnail-2.png"
             alt="A thumbnail of a project"
             title="The Nuyu Project"
+            description="Brand Identity"
             link="/projects/nuyu"
           />
         </motion.div>
@@ -136,6 +140,7 @@ export default function Home() {
             src="/thumbnail-2.png"
             alt="A thumbnail of a project"
             title="Dream Big"
+            description="Brand Identity"
             link="/projects/dream-big"
           />
         </motion.div>
@@ -150,6 +155,7 @@ export default function Home() {
             src="/thumbnail-2.png"
             alt="A thumbnail of a project"
             title="The Nuyu Project"
+            description="Brand Identity"
             link="/projects/nuyu"
           />
         </motion.div>
