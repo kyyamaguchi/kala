@@ -11,6 +11,7 @@ import { Media } from '@/components/Media'
 import { Subtle } from '@/components/Subtle'
 import { Spacer } from '@/components/Spacer'
 import { BackButton } from '@/components/BackButton'
+import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { BelowTheFold } from '@/components/BelowTheFold'
 
 import styles from './Page.module.css'
@@ -97,6 +98,7 @@ export default async function Page(
     <>
       <Suspense>
         <div className={styles.content}>
+          <Breadcrumbs />
           <BackButton />
           <header className={styles.header}>
             <Grid columns={2}>
