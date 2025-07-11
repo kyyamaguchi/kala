@@ -1,3 +1,7 @@
+div#media-container {
+  margin: 16px 0;
+}
+
 div#media-container a {
   color: var(--color-black);
 }

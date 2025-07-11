@@ -11,14 +11,10 @@ published: true
   alt=""
 />
 
-<Spacer size={16} />
-
 <Media
   src="/thumbnail-2.png"
   alt=""
 />
-
-<Spacer size={16} />
 
 default:
 
@@ -44,13 +40,10 @@ float: right:
   A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 </div>
 
-<Spacer size={16} />
-
 <Media
   src="/thumbnail-2.png"
   alt=""
 />
-<Spacer size={16} />
 
 <Grid columns={2}>
   <Media
@@ -63,14 +56,10 @@ float: right:
   />
 </Grid>
 
-<Spacer size={16} />
-
 <Media
   src="/thumbnail-2.png"
   alt=""
 />
-
-<Spacer size={16} />
 
 <Grid columns={2}>
   <Media
@@ -82,8 +71,6 @@ float: right:
     alt=""
   />
 </Grid>
-
-<Spacer size={16} />
 
 Two-column grid, equal size distribution:
 
@@ -112,8 +99,6 @@ Two-column grid, equal size distribution:
     <p>A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
   </div>
 </Grid>
-
-<Spacer size={16} />
 
 <Media
   src="/thumbnail-2.png"
