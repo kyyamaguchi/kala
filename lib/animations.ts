@@ -10,6 +10,6 @@ export const fadeInTo: TargetAndTransition = {
 }
 export const fadeInProps: Transition = {
   type: 'tween',
-  ease: 'easeOut',
-  duration: 0.8
+  ease: [0.23, 1, 0.32, 1],
+  duration: 2
 }
