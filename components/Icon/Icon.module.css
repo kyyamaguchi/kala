@@ -1,4 +1,7 @@
+a.link svg {
+  transition: fill 0.3s ease;
+}
+
 a.link:hover svg {
-  fill: var(--color-black);
-  transition: all 0.3s ease;
+  fill: var(--color-foreground);
 }
