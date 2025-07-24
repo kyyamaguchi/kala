@@ -12,7 +12,7 @@ section#hero p.subtitle {
 }
 
 section#hero p.subtle {
-  color: var(--color-black-30);
+  color: var(--color-subtle);
   font-size: 0.9rem;
 }
 

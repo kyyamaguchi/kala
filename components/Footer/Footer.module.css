@@ -4,7 +4,7 @@ footer#footer {
 }
 
 footer#footer p {
-  color: var(--color-black-30);
+  color: var(--color-subtle);
 }
 
 footer#footer nav#external-links ul {
@@ -21,12 +21,12 @@ footer#footer a {
   font-weight: 500;
   padding: 8px 16px;
   margin: 0 -16px;
-  transition: all 0.3s ease;
-  color: var(--color-black-30);
+  transition: color 0.3s ease;
+  color: var(--color-subtle);
 }
 
 footer#footer a:hover {
-  color: var(--color-black);
+  color: var(--color-foreground);
 }
 
 @media (max-width: 700px) {

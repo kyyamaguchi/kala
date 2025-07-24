@@ -27,7 +27,7 @@ nav#breadcrumbs ol li a {
 }
 
 nav#breadcrumbs ol li:first-child a {
-  color: var(--color-black);
+  color: var(--color-foreground);
 }
 
 nav#breadcrumbs ol li:last-child {
@@ -37,5 +37,5 @@ nav#breadcrumbs ol li:last-child {
 nav#breadcrumbs ol li::after {
   content: "/";
   margin-left: 8px;
-  color: var(--color-black-30);
+  color: var(--color-subtle);
 }

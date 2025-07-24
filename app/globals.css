@@ -3,12 +3,12 @@
 
   --color-black:    hsla(0deg, 000%, 000%, 1.000);
   --color-white:    hsla(0deg, 000%, 100%, 1.000);
-  --color-black-10: hsla(0deg, 000%, 000%, 0.067);
+  --color-white-50: hsla(0deg, 000%, 100%, 0.500);
   --color-black-30: hsla(0deg, 000%, 000%, 0.300);
-  --color-black-50: hsla(0deg, 000%, 000%, 0.500);
 
-  color: var(--color-black);
-  background-color: var(--color-white);
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-black);
+  --color-subtle:     var(--color-black-30);
 
   --margin-large: 160px;
   --margin-small: 40px;
@@ -29,6 +29,14 @@ body {
   line-height: 180%;
   font-size: 1rem;
   font-family: var(--font);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
+.invert {
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-white);
+  --color-subtle:     var(--color-white-50);
 }
 
 main {
@@ -52,9 +60,14 @@ h3 {
 }
 
 a {
-  color: var(--color-black-50);
+  color: var(--color-subtle);
   text-decoration: none;
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-foreground);
 }
 
 p,
@@ -102,7 +115,7 @@ p {
 }
 
 ::view-transition-old(root) {
-  animation: 0.2s ease both fade-out;
+  animation: 0.4s ease both fade-out;
 }
 
 ::view-transition-new(root) {

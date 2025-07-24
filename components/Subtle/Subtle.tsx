@@ -4,7 +4,7 @@ export function Subtle({ children }: { children: React.ReactNode }) {
       fontSize: '1rem',
       fontWeight: 500,
       lineHeight: 0.8,
-      color: 'var(--color-black-30)',
+      color: 'var(--color-subtle)',
     }}>
       {children}
     </span>

@@ -1,7 +1,7 @@
 li > a.active {
-  color: var(--color-black);
+  color: var(--color-foreground);
 }
 
 li > a.inactive {
-  color: var(--color-black-30);
+  color: var(--color-subtle);
 }

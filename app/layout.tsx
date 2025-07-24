@@ -6,6 +6,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Cursor } from '@/components/Cursor'
 import { MainWrapper } from '@/components/MainWrapper'
+import { AboutWrapper } from '@/components/AboutWrapper'
 
 import './globals.css'
 
@@ -29,7 +30,7 @@ export default function RootLayout(
   return (
     <ViewTransitions>
       <html lang="en">
-        <body>
+        <AboutWrapper>
           <MainWrapper>
             <Header />
             {children}
@@ -37,7 +38,7 @@ export default function RootLayout(
             <Spacer size={`10vh`} />
             <Cursor />
           </MainWrapper>
-        </body>
+        </AboutWrapper>
       </html>
     </ViewTransitions>
   )

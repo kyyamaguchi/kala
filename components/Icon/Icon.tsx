@@ -50,7 +50,7 @@ function LinkedIn(props: SVGProps<SVGSVGElement>) {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 256 256"
-        fill="var(--color-black-30)"
+        fill="var(--color-subtle)"
         {...props}
       >
         <path
@@ -70,7 +70,7 @@ function Instagram(props: SVGProps<SVGSVGElement>) {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 256 256"
-        fill="var(--color-black-30)"
+        fill="var(--color-subtle)"
         {...props}
       >
         <path
