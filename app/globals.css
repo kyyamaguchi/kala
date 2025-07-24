@@ -3,7 +3,7 @@
 
   --color-black:    hsla(0deg, 000%, 000%, 1.000);
   --color-white:    hsla(0deg, 000%, 100%, 1.000);
-  --color-white-60: hsla(0deg, 000%, 100%, 0.600);
+  --color-white-50: hsla(0deg, 000%, 100%, 0.500);
   --color-black-30: hsla(0deg, 000%, 000%, 0.300);
 
   --color-background: var(--color-white);
@@ -36,7 +36,7 @@ body {
 .invert {
   --color-background: hsla(0deg, 000%, 008%, 1.000);
   --color-foreground: hsla(0deg, 000%, 094%, 1.000);
-  --color-subtle:     var(--color-white-60);
+  --color-subtle:     var(--color-white-50);
 }
 
 main {
