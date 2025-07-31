@@ -34,3 +34,9 @@ header#header div#name-container h2 {
     flex-direction: column;
   }
 }
+
+@media (min-width: 768px) {
+  header#header.project-page {
+    display: none;
+  }
+}

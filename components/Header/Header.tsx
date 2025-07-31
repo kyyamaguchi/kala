@@ -10,9 +10,17 @@ import styles from './Header.module.css'
 import { fadeInFrom, fadeInTo, fadeInProps } from '@/lib/animations'
 
 function HeaderContent() {
+  const pathname = usePathname()
+  let projectPageStyles = ""
+  if (pathname.includes('projects'))
+    projectPageStyles = styles["project-page"]
+
   return (
     <>
-      <header id={styles.header}>
+      <header
+        id={styles.header}
+        className={projectPageStyles}
+      >
         <div id={styles["name-container"]}>
           <h1><Link href={`/`}>Kala Yamaguchi</Link></h1>
           <h2>Designer</h2>
@@ -25,7 +33,6 @@ function HeaderContent() {
 
 export function Header() {
   const pathname = usePathname()
-  if (pathname.includes('projects')) return <></>
   if (pathname.includes('about')) return <HeaderContent />
 
   return (
