@@ -84,7 +84,7 @@ export default function Home() {
             link="/projects/dream-big"
           />
         </motion.div>
-        <Spacer size={32} />
+        <Spacer size={16} />
         <motion.div
           initial={fadeInFrom}
           whileInView={fadeInTo}
@@ -99,7 +99,7 @@ export default function Home() {
             link="/projects/nuyu"
           />
         </motion.div>
-        <Spacer size={32} />
+        <Spacer size={16} />
         <motion.div
           initial={fadeInFrom}
           whileInView={fadeInTo}
@@ -114,7 +114,7 @@ export default function Home() {
             link="/projects/dream-big"
           />
         </motion.div>
-        <Spacer size={32} />
+        <Spacer size={16} />
         <motion.div
           initial={fadeInFrom}
           whileInView={fadeInTo}
@@ -129,7 +129,7 @@ export default function Home() {
             link="/projects/nuyu"
           />
         </motion.div>
-        <Spacer size={32} />
+        <Spacer size={16} />
         <motion.div
           initial={fadeInFrom}
           whileInView={fadeInTo}
@@ -144,7 +144,7 @@ export default function Home() {
             link="/projects/dream-big"
           />
         </motion.div>
-        <Spacer size={32} />
+        <Spacer size={16} />
         <motion.div
           initial={fadeInFrom}
           whileInView={fadeInTo}
