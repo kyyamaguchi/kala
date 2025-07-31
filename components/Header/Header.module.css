@@ -29,12 +29,6 @@ header#header div#name-container h2 {
   color: var(--color-subtle);
 }
 
-@media (max-width: 1160px) {
-  header#header {
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 768px) {
   header#header.project-page {
     display: none;

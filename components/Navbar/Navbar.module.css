@@ -20,9 +20,10 @@ nav#navbar > ul > li > a:hover {
   color: var(--color-foreground);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1160px) {
   nav#navbar > ul {
     flex-direction: column;
     gap: 0;
+    margin-right: 32px;
   }
 }
