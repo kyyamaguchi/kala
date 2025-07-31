@@ -20,15 +20,14 @@ section#hero p.subtle {
   section#hero {
     flex-direction: column;
     margin: 40px 0;
+    gap: 0;
   }
 
-  section#hero p {
-    align-self: flex-start;
-  }
-}
-
-@media (max-width: 768px) {
   section#hero img {
     display: none;
+  }
+
+  section#hero div#hero-text {
+    align-self: flex-start;
   }
 }

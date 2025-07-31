@@ -33,7 +33,7 @@ export default function Home() {
         </motion.div>
 
         {/* Hero text */}
-        <div>
+        <div id={styles["hero-text"]}>
           <motion.p
             className={styles.subtitle}
             initial={fadeInFrom}

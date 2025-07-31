@@ -34,9 +34,3 @@ header#header div#name-container h2 {
     flex-direction: column;
   }
 }
-
-@media (max-width: 768px) {
-  header#header {
-    flex-direction: row;
-  }
-}

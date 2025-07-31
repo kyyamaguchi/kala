@@ -19,3 +19,10 @@ nav#navbar > ul > li > a {
 nav#navbar > ul > li > a:hover {
   color: var(--color-foreground);
 }
+
+@media (max-width: 768px) {
+  nav#navbar > ul {
+    flex-direction: column;
+    gap: 0;
+  }
+}
