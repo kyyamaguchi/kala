@@ -69,28 +69,29 @@ export async function generateMetadata(
   return metadata
 }
 
-export const dynamicParams = false
-export async function generateStaticParams() {
-  async function getMdSlugs(folder: string) {
-    const entries = await fs.readdir(folder, { withFileTypes: true })
-    const files = entries.filter((file) => file.isFile())
-    const directories = entries.filter((file) => file.isDirectory())
-    let slugs = files
-      .filter((file) => file.name.endsWith('.md'))
-      .map((file) => file.name.replace(/\.md$/, ''))
-      .map((slug) => path.join(folder, slug))
-      .map((slug) => slug.split('/'))
-      .map((slug) => slug.slice(1))
-      .map((slug) => ({ slug }))
+export async function getMdSlugs(folder: string) {
+  const entries = await fs.readdir(folder, { withFileTypes: true })
+  const files = entries.filter((file) => file.isFile())
+  const directories = entries.filter((file) => file.isDirectory())
+  let slugs = files
+    .filter((file) => file.name.endsWith('.md'))
+    .map((file) => file.name.replace(/\.md$/, ''))
+    .map((slug) => path.join(folder, slug))
+    .map((slug) => slug.split('/'))
+    .map((slug) => slug.slice(1))
+    .map((slug) => ({ slug }))
 
-    for (const directory of directories) {
-      const nestedSlugs = await getMdSlugs(path.join(folder, directory.name))
-      slugs = slugs.concat(nestedSlugs)
-    }
-
-    return slugs
+  for (const directory of directories) {
+    const nestedSlugs = await getMdSlugs(path.join(folder, directory.name))
+    slugs = slugs.concat(nestedSlugs)
   }
 
+  return slugs
+}
+
+
+export const dynamicParams = false
+export async function generateStaticParams() {
   const slugs = await getMdSlugs('app')
   return slugs
 }
