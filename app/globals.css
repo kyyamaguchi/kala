@@ -43,6 +43,11 @@ body {
   --color-decoration: var(--color-white-10);
 }
 
+::selection {
+  color: var(--color-background);
+  background: var(--color-foreground);
+}
+
 main {
   margin: 0 auto;
 }
