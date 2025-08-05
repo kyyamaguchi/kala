@@ -3,6 +3,7 @@ title: "Dream Big"
 area: "Brand Identity"
 season: "Spring 2023"
 description: "A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Hi from Kala"
+thumbnail: "/thumbnail-2.png"
 published: true
 ---
 

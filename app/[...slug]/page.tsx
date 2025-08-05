@@ -1,11 +1,11 @@
+// Functions
 import path from 'node:path'
 import fs from 'node:fs/promises'
-import type { Metadata } from 'next'
-import rehypeSlug from 'rehype-slug'
-import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
+// Components
+import { Suspense } from 'react'
 import { Grid } from '@/components/Grid'
 import { Media } from '@/components/Media'
 import { Subtle } from '@/components/Subtle'
@@ -13,20 +13,28 @@ import { Spacer } from '@/components/Spacer'
 import { BackButton } from '@/components/BackButton'
 import { BelowTheFold } from '@/components/BelowTheFold'
 
+// rehype plugins
+import rehypeSlug from 'rehype-slug'
+
+// Types
+import type { Metadata } from 'next'
+
+// Styles
 import styles from './Page.module.css'
 
-const readPage = cache(async (slug: string[]) => {
+export type Frontmatter = {
+  title: string
+  area: string
+  season: string
+  description: string
+  thumbnail: string
+  published: boolean
+}
+
+export async function readPage(slug: string[]) {
   try {
     const filePath = path.join(process.cwd(), 'app', ...slug) + '.md'
     const page = await fs.readFile(filePath, 'utf8')
-
-    type Frontmatter = {
-      title: string
-      area: string
-      season: string
-      description: string
-      published: boolean
-    }
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
@@ -42,7 +50,7 @@ const readPage = cache(async (slug: string[]) => {
   } catch (error) {
     notFound()
   }
-})
+}
 
 export async function generateMetadata(
   { params }:

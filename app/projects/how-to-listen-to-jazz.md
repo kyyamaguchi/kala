@@ -3,6 +3,7 @@ title: "How To Listen To Jazz"
 area: "Publication Design"
 season: "Spring 2024"
 description: "Some shit"
+thumbnail: "/thumbnail-2.png"
 published: true
 ---
 
