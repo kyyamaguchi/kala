@@ -21,7 +21,7 @@ footer#footer a {
   font-weight: 500;
   padding: 8px 16px;
   margin: 0 -16px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   color: var(--color-subtle);
 }
 

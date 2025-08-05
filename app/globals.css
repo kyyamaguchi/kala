@@ -3,12 +3,15 @@
 
   --color-black:    hsla(0deg, 000%, 000%, 1.000);
   --color-white:    hsla(0deg, 000%, 100%, 1.000);
+  --color-white-10: hsla(0deg, 000%, 100%, 0.100);
   --color-white-50: hsla(0deg, 000%, 100%, 0.500);
+  --color-black-10: hsla(0deg, 000%, 000%, 0.100);
   --color-black-30: hsla(0deg, 000%, 000%, 0.300);
 
   --color-background: var(--color-white);
   --color-foreground: var(--color-black);
   --color-subtle:     var(--color-black-30);
+  --color-decoration: var(--color-black-10);
 
   --margin-large: 160px;
   --margin-small: 40px;
@@ -37,6 +40,7 @@ body {
   --color-background: hsla(0deg, 000%, 004%, 1.000);
   --color-foreground: hsla(0deg, 000%, 090%, 1.000);
   --color-subtle:     var(--color-white-50);
+  --color-decoration: var(--color-white-10);
 }
 
 main {
@@ -61,13 +65,18 @@ h3 {
 
 a {
   color: var(--color-subtle);
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-decoration);
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-underline-offset: 3px;
   font-weight: 700;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover {
   color: var(--color-foreground);
+  text-decoration-color: transparent;
 }
 
 p,
