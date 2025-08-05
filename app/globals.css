@@ -34,8 +34,8 @@ body {
 }
 
 .invert {
-  --color-background: hsla(0deg, 000%, 008%, 1.000);
-  --color-foreground: hsla(0deg, 000%, 094%, 1.000);
+  --color-background: hsla(0deg, 000%, 004%, 1.000);
+  --color-foreground: hsla(0deg, 000%, 090%, 1.000);
   --color-subtle:     var(--color-white-50);
 }
 
