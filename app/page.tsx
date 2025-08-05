@@ -1,12 +1,21 @@
+// Components
 import Image from 'next/image'
 import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
 import * as motion from 'motion/react-client'
 
+// Styles
 import styles from './Home.module.css'
+
+// Constants
 import { fadeInFrom, fadeInProps, fadeInTo } from '@/lib/animations'
 
-export default function Home() {
+// Functions
+import { getProjectSlugs, readProjects } from '@/lib/projects'
+
+export default async function Home() {
+  const projectSlugs = await getProjectSlugs()
+  const projectFrontmatters = await readProjects(projectSlugs)
 
   return (
     <div id={styles.content}>
@@ -70,95 +79,28 @@ export default function Home() {
         }}
         viewport={{ once: true }}
       >
-        <motion.div
-          initial={fadeInFrom}
-          whileInView={fadeInTo}
-          transition={fadeInProps}
-          viewport={{ once: true }}
-        >
-          <Media
-            src="/thumbnail-2.png"
-            alt="A thumbnail of a project"
-            title="Dream Big"
-            description="Brand Identity"
-            link="/projects/dream-big"
-          />
-        </motion.div>
-        <Spacer size={16} />
-        <motion.div
-          initial={fadeInFrom}
-          whileInView={fadeInTo}
-          transition={fadeInProps}
-          viewport={{ once: true }}
-        >
-          <Media
-            src="/thumbnail-2.png"
-            alt="A thumbnail of a project"
-            title="The Nuyu Project"
-            description="Brand Identity"
-            link="/projects/nuyu"
-          />
-        </motion.div>
-        <Spacer size={16} />
-        <motion.div
-          initial={fadeInFrom}
-          whileInView={fadeInTo}
-          transition={fadeInProps}
-          viewport={{ once: true }}
-        >
-          <Media
-            src="/thumbnail-2.png"
-            alt="A thumbnail of a project"
-            title="Dream Big"
-            description="Brand Identity"
-            link="/projects/dream-big"
-          />
-        </motion.div>
-        <Spacer size={16} />
-        <motion.div
-          initial={fadeInFrom}
-          whileInView={fadeInTo}
-          transition={fadeInProps}
-          viewport={{ once: true }}
-        >
-          <Media
-            src="/thumbnail-2.png"
-            alt="A thumbnail of a project"
-            title="The Nuyu Project"
-            description="Brand Identity"
-            link="/projects/nuyu"
-          />
-        </motion.div>
-        <Spacer size={16} />
-        <motion.div
-          initial={fadeInFrom}
-          whileInView={fadeInTo}
-          transition={fadeInProps}
-          viewport={{ once: true }}
-        >
-          <Media
-            src="/thumbnail-2.png"
-            alt="A thumbnail of a project"
-            title="Dream Big"
-            description="Brand Identity"
-            link="/projects/dream-big"
-          />
-        </motion.div>
-        <Spacer size={16} />
-        <motion.div
-          initial={fadeInFrom}
-          whileInView={fadeInTo}
-          transition={fadeInProps}
-          viewport={{ once: true }}
-        >
-          <Media
-            src="/thumbnail-2.png"
-            alt="A thumbnail of a project"
-            title="The Nuyu Project"
-            description="Brand Identity"
-            link="/projects/nuyu"
-          />
-        </motion.div>
+        {
+          projectFrontmatters.map((project, index) => {
+            return (
+              <div key={index}>
+                <motion.div
+                  initial={fadeInFrom}
+                  whileInView={fadeInTo}
+                  transition={fadeInProps}
+                  viewport={{ once: true }}
+                >
+                  <Media
+                    src={project.thumbnail}
+                    title={project.title}
+                    description={project.area}
+                    link={projectSlugs[index].slug.join('/')}
+                  />
+                </motion.div>
+                <Spacer size={16} />
+              </div>
+            )
+          })
+        }
       </motion.div>
     </div>
   )
