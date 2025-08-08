@@ -20,6 +20,7 @@ export type Frontmatter = {
   season: string
   description: string
   thumbnail: string
+  order?: number
   published: boolean
 }
 
@@ -74,5 +75,15 @@ export async function getProjectFrontmatters(files: { slug: string[] }[]) {
     const { frontmatter } = await readPage(file.slug)
     projectFrontmatters.push(frontmatter)
   }
+
+  // Hoist ordered projects
+  projectFrontmatters.sort(function (a, b) {
+    const firstProjectOrder = a.order ?? Infinity
+    const secondProjectOrder = b.order ?? Infinity
+    if (firstProjectOrder < secondProjectOrder) return -1
+    if (secondProjectOrder < firstProjectOrder) return 1
+    return 0
+  })
+
   return projectFrontmatters
 }
