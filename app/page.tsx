@@ -11,11 +11,11 @@ import styles from './Home.module.css'
 import { fadeInFrom, fadeInProps, fadeInTo } from '@/lib/animations'
 
 // Functions
-import { getProjectSlugs, readProjects } from '@/lib/projects'
+import { getProjectFrontmatters, getProjectSlugs } from '@/lib/projects'
 
 export default async function Home() {
   const projectSlugs = await getProjectSlugs()
-  const projectFrontmatters = await readProjects(projectSlugs)
+  const projectFrontmatters = await getProjectFrontmatters(projectSlugs)
 
   return (
     <div id={styles.content}>
