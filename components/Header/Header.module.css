@@ -35,3 +35,9 @@ header#header div#name-container h2 {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  header#header {
+    margin-top: 32px;
+  }
+}
