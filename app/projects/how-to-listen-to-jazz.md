@@ -120,11 +120,3 @@ Two-column grid, equal size distribution:
   src="/thumbnail-2.png"
   alt=""
 />
-
-<BelowTheFold
-  title="The Nuyu Project"
-  area="Brand Identity"
-  season="Spring 2023"
-  description="A reinvisioned brand identity for USF's Dream Big along with some other copy"
-  link="/projects/nuyu"
-/>

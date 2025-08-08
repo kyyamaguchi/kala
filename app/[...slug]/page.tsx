@@ -1,10 +1,11 @@
 // Functions
-import { getMdSlugs, readPage } from '@/lib/projects'
+import { getBelowTheFoldProject, getMdSlugs, readPage } from '@/lib/projects'
 
 // Components
 import { Suspense } from 'react'
 import { Grid } from '@/components/Grid'
 import { BackButton } from '@/components/BackButton'
+import { BelowTheFold } from '@/components/BelowTheFold'
 
 // Types
 import type { Metadata } from 'next'
@@ -40,6 +41,7 @@ export default async function Page(
   { params: { slug: string[] } }
 ) {
   const { content, frontmatter } = await readPage(params.slug)
+  const nextProject = await getBelowTheFoldProject(params.slug)
 
   return (
     <>
@@ -56,6 +58,13 @@ export default async function Page(
             </Grid>
           </header>
           {content}
+          <BelowTheFold
+            title={nextProject.title}
+            area={nextProject.area}
+            season={nextProject.season}
+            description={nextProject.description}
+            link={`/${nextProject.slug}`}
+          />
         </div>
       </Suspense>
     </>

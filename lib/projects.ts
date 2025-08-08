@@ -9,7 +9,6 @@ import { Grid } from '@/components/Grid'
 import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
 import { Subtle } from '@/components/Subtle'
-import { BelowTheFold } from '@/components/BelowTheFold'
 
 // rehype plugins
 import rehypeSlug from 'rehype-slug'
@@ -51,7 +50,7 @@ export async function readPage(slug: string[]) {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { BelowTheFold, Grid, Media, Spacer, Subtle },
+      components: { Grid, Media, Spacer, Subtle },
       options: {
         parseFrontmatter: true,
         mdxOptions: {
@@ -86,4 +85,15 @@ export async function getProjectFrontmatters(files: { slug: string[] }[]) {
   })
 
   return projectFrontmatters
+}
+
+export async function getBelowTheFoldProject(slug: string[]) {
+  const projectSlugs = await getProjectSlugs()
+  const projectFrontmatters = await getProjectFrontmatters(projectSlugs)
+  const { frontmatter: currentProject } = await readPage(slug)
+  const currentProjectIndex = projectFrontmatters.findIndex((project) => project.title === currentProject.title)
+  const nextProjectIndex = currentProjectIndex + 1
+  const nextProject = projectFrontmatters[nextProjectIndex] ?? projectFrontmatters[0]
+  const nextProjectSlug = projectSlugs[nextProjectIndex]?.slug.join('/') ?? projectSlugs[0].slug.join('/')
+  return { ...nextProject, slug: nextProjectSlug }
 }

@@ -32,11 +32,3 @@ A brief but thorough description of the project. Lorem ipsum dolor sit amet, con
 A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 
 A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-
-<BelowTheFold
-  title="Dream Big"
-  area="Brand Identity"
-  season="Spring 2023"
-  description="A brief but thorough description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Hi from Kala"
-  link="/projects/dream-big"
-/>
