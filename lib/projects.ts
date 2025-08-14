@@ -1,0 +1,99 @@
+// Functions
+import path from 'node:path'
+import fs from 'node:fs/promises'
+import { notFound } from 'next/navigation'
+import { compileMDX } from 'next-mdx-remote/rsc'
+
+// Components
+import { Grid } from '@/components/Grid'
+import { Media } from '@/components/Media'
+import { Spacer } from '@/components/Spacer'
+import { Subtle } from '@/components/Subtle'
+
+// rehype plugins
+import rehypeSlug from 'rehype-slug'
+
+export type Frontmatter = {
+  title: string
+  area: string
+  season: string
+  description: string
+  thumbnail: string
+  order?: number
+  published: boolean
+}
+
+export async function getMdSlugs(folder: string) {
+  const entries = await fs.readdir(folder, { withFileTypes: true })
+  const files = entries.filter((file) => file.isFile())
+  const directories = entries.filter((file) => file.isDirectory())
+  let slugs = files
+    .filter((file) => file.name.endsWith('.md'))
+    .map((file) => file.name.replace(/\.md$/, ''))
+    .map((slug) => path.join(folder, slug))
+    .map((slug) => slug.split('/'))
+    .map((slug) => slug.slice(1))
+    .map((slug) => ({ slug }))
+
+  for (const directory of directories) {
+    const nestedSlugs = await getMdSlugs(path.join(folder, directory.name))
+    slugs = slugs.concat(nestedSlugs)
+  }
+
+  return slugs
+}
+
+export async function readPage(slug: string[]) {
+  try {
+    const filePath = path.join(process.cwd(), 'app', ...slug) + '.md'
+    const page = await fs.readFile(filePath, 'utf8')
+
+    const { content, frontmatter } = await compileMDX<Frontmatter>({
+      source: page,
+      components: { Grid, Media, Spacer, Subtle },
+      options: {
+        parseFrontmatter: true,
+        mdxOptions: {
+          rehypePlugins: [ rehypeSlug ]
+        }
+      }
+    })
+    return { content, frontmatter }
+  } catch (error) {
+    notFound()
+  }
+}
+
+export async function getProjectSlugs() {
+  return await getMdSlugs('app')
+}
+
+export async function getProjectFrontmatters(files: { slug: string[] }[]) {
+  const projectFrontmatters: Frontmatter[] = []
+  for (const file of files) {
+    const { frontmatter } = await readPage(file.slug)
+    projectFrontmatters.push(frontmatter)
+  }
+
+  // Hoist ordered projects
+  projectFrontmatters.sort(function (a, b) {
+    const firstProjectOrder = a.order ?? Infinity
+    const secondProjectOrder = b.order ?? Infinity
+    if (firstProjectOrder < secondProjectOrder) return -1
+    if (secondProjectOrder < firstProjectOrder) return 1
+    return 0
+  })
+
+  return projectFrontmatters
+}
+
+export async function getBelowTheFoldProject(slug: string[]) {
+  const projectSlugs = await getProjectSlugs()
+  const projectFrontmatters = await getProjectFrontmatters(projectSlugs)
+  const { frontmatter: currentProject } = await readPage(slug)
+  const currentProjectIndex = projectFrontmatters.findIndex((project) => project.title === currentProject.title)
+  const nextProjectIndex = currentProjectIndex + 1
+  const nextProject = projectFrontmatters[nextProjectIndex] ?? projectFrontmatters[0]
+  const nextProjectSlug = projectSlugs[nextProjectIndex]?.slug.join('/') ?? projectSlugs[0].slug.join('/')
+  return { ...nextProject, slug: nextProjectSlug }
+}

@@ -20,3 +20,9 @@ p.subtitle {
 p.description {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  header.header {
+    margin-top: 48px;
+  }
+}

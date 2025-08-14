@@ -4,6 +4,7 @@ div#media-container {
 
 div#media-container a {
   color: var(--color-foreground);
+  text-decoration: none;
 }
 
 div#media-container figure img,

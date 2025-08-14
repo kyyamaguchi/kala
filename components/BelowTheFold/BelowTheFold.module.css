@@ -1,5 +1,6 @@
 a#link-wrapper {
   font-weight: unset;
+  text-decoration: none;
 }
 
 hr#divider {

@@ -20,6 +20,7 @@ header#header div#name-container h1 {
 header#header div#name-container h1 a {
   font-weight: 400;
   color: var(--color-foreground);
+  text-decoration: none;
 }
 
 header#header div#name-container h2 {
@@ -32,5 +33,11 @@ header#header div#name-container h2 {
 @media (min-width: 768px) {
   header#header.project-page {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header#header {
+    margin-top: 32px;
   }
 }
