@@ -1,28 +1,39 @@
 article.about {
   display: flex;
   gap: 64px;
+  margin: 0 64px;
 }
 
 article.about img {
   border-radius: 6px;
 }
 
-article.about section p strong {
+article.about section.text a {
   font-weight: 500;
 }
 
-article.about section.text a {
-  font-weight: 500;
+article.about section.text p:first-child {
+  margin-top: -4px;
 }
 
 @media (max-width: 1160px) {
   article.about {
     flex-direction: column;
     gap: 32px;
+    margin: unset;
   }
 
   article.about img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin: 0 auto;
+  }
+
+  article.about section.text {
+    align-self: center;
+  }
+
+  article.about section.text p:first-child {
+    margin-top: 1em;
   }
 }
