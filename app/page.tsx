@@ -34,7 +34,7 @@ export default async function Home() {
           <Image
             priority
             unoptimized
-            src="/illustration.jpg"
+            src="/kala_illustration.JPG"
             alt="An illustration of Kala Yamaguchi"
             width={1371/4.4}
             height={2132/4.4}
@@ -65,7 +65,7 @@ export default async function Home() {
             }}
             viewport={{ once: true }}
           >
-            Based in San Francisco, CA.
+            Based in Seattle, WA.
           </motion.p>
         </div>
       </section>
