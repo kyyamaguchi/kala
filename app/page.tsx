@@ -37,7 +37,7 @@ export default async function Home() {
             src="/kala_illustration.JPG"
             alt="An illustration of Kala Yamaguchi"
             width={1371/4.4}
-            height={2175/4.4}
+            height={2225/4.4}
           />
         </motion.div>
 
