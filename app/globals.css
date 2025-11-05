@@ -1,8 +1,8 @@
 :root {
   --font: Helvetica, sans-serif;
 
-  --color-black:    hsla(0deg, 000%, 000%, 1.000);
-  --color-white:    rgb(231, 229, 229);
+  --color-black:    #000000;
+  --color-white:    hsla(0deg, 000%, 100%, 1.000);
   --color-white-10: hsla(0deg, 000%, 100%, 0.100);
   --color-white-50: hsla(0deg, 000%, 100%, 0.500);
   --color-black-10: hsla(0deg, 000%, 000%, 0.100);
