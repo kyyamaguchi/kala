@@ -18,7 +18,7 @@ header#header div#name-container h1 {
 }
 
 header#header div#name-container h1 a {
-  font-weight: 400;
+  font-weight: 450;
   color: var(--color-foreground);
   text-decoration: none;
 }
