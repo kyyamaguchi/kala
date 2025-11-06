@@ -27,7 +27,7 @@ export default async function Home() {
           animate={fadeInTo}
           transition={{
             ...fadeInProps,
-            delay: 0.3
+            delay: 0.5
           }}
           viewport={{ once: true }}
         >
@@ -49,7 +49,7 @@ export default async function Home() {
             animate={fadeInTo}
             transition={{
               ...fadeInProps,
-              delay: 0.6
+              delay: 0.7
             }}
             viewport={{ once: true }}
           >
@@ -61,7 +61,7 @@ export default async function Home() {
             animate={fadeInTo}
             transition={{
               ...fadeInProps,
-              delay: 0.6
+              delay: 0.7
             }}
             viewport={{ once: true }}
           >
